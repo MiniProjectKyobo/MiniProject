@@ -10,7 +10,7 @@
 <link href="<%=request.getContextPath() %>/resources/css/signup.css" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper member_login id=mainDiv">
 		<header class="header_wrapper">
 			<%@include file="/WEB-INF/views/signup/signup_header.jsp"%>
 		</header>
