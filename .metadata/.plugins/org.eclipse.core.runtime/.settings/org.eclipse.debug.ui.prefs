@@ -1,6 +1,0 @@
-Console.highWaterMark=8008000
-Console.lowWaterMark=8000000
-StringVariablePreferencePage=143,119,118,94,
-eclipse.preferences.version=1
-org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
-preferredTargets=org.eclipse.lsp4e.debug.toggleBreakpointTarget\:org.eclipse.lsp4e.debug.toggleBreakpointTarget|
