@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+   <header>
+        Header goes here.
+    </header>
+    
 </body>
 </html>
