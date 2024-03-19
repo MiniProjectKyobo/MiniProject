@@ -28,7 +28,6 @@ public class MainController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getRequestDispatcher("/WEB-INF/views/main.jsp").forward(request,response);
 		
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 
