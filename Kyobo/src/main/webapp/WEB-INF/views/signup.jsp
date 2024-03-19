@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Sign Up</title>
 <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/components.css" rel="stylesheet">
+<link href="<%=request.getContextPath() %>/resources/css/signup.css" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
