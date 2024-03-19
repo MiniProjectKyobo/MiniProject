@@ -1,4 +1,4 @@
-package kh.mini.kyobo;
+package kh.mini.kyobo.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class controller
+ * Servlet implementation class MainController
  */
-@WebServlet("/controller")
-public class controller extends HttpServlet {
+@WebServlet("/main")
+public class MainController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public controller() {
+    public MainController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,16 +26,9 @@ public class controller extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+	request.getRequestDispatcher("WEB-INF/views/main/main.jsp").forward(request, response);;
+	
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
-	}
 
 }
