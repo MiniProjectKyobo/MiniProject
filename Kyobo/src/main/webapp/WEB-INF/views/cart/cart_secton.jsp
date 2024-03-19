@@ -1,12 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
 
-</body>
-</html>
+    
+  <section id="contents" class="contents_wrap">
+  		<div class="contents_inner">
+  			<div calss="cart_top_wrap">
+  			lorem...
+  			</div>
+  			<div class="cart_body_wrap">
+  			lorem...
+  			</div>
+  		</div>
+		</section>
