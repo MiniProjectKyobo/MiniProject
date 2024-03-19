@@ -1,0 +1,36 @@
+/* 바디 규격 */
+body{
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Roboto", "Noto Sans KR", "PingFang SC";
+    color: #000;
+
+}
+.wrapper{
+    position: relative;
+    min-width: 1440px;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* header */
+.wrap{
+    position: relative;
+    max-width: 1440px;
+    overflow: hidden;
+    min-width: 100vh;
+}
+.header_wrapper{
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    z-index: 1000;
+}
+/* main */
+.container_wrapper{
+    min-height: calc(100vh-80px);
+}
+/* footer */
+.footer_wrapper{
+    background-color: #eaeaea;
+}
