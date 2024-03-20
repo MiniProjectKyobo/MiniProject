@@ -5,12 +5,12 @@
 				<div class="form_col_group valid_check">
 					<div class="col_box id">
 						<div class="awesomplete">
-						ID입력
+						<input type="text" placeholder="아이디를 입력해주세요" class="form_ip">
 						</div>
 					</div>
-					<div class="ccol_box pw">
+					<div class="col_box pw">
 						<div class="form_ip_pw">
-						pw입력
+						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip">
 						</div>
 					</div>
 				</div>
@@ -19,16 +19,24 @@
 					
 					</div>
 					<div class="valid_check">
-					경고메세지영역
+					
 					</div>
 				</div>
 			</div>
 			<div class="btn_wrap justify">
-			login 버튼
+				<button class="btn_lg btn_light_gray" id="loginBtn"  >
+					<span class="text">로그인</span>
+				
+				</button>
 			</div>
 			<div class="save_id_box"> 
-			id저장 체크박스,아이디찾기
-			
+				<span class="form_chk">
+					<input id="formSaveId" type="checkbox">
+					<label for="formSaveId">
+					아이디저장
+					</label>
+				</span>
+				<a href="#" class="btn_text_link">아이디/비밀번호 찾기</a>
 			</div>
 			<div class="join_induce_wrap">
 				<div>
