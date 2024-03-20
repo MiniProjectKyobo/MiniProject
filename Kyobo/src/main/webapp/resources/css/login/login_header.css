@@ -1,0 +1,27 @@
+@charset "UTF-8";
+ 
+ 
+ .wrapper member_login{
+ display:flex;
+ }
+ 
+.header_wrapper{
+ position:relative;
+ }
+ 
+ .wrapper.member_login .header_wrapper {
+    width: 100%;
+    border-bottom: none;
+    height: 54px;
+}
+
+.logo_box{
+	display:inline-block;
+    width: 171px;
+    height: 90px;
+}
+
+img{
+	width: 171px;
+    height: 80px;
+}
