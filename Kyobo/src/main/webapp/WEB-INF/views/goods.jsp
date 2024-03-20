@@ -9,7 +9,7 @@
 	rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/components.css"
 	rel="stylesheet">
-	<link href="<%=request.getContextPath() %>/resources/css/goods_section.css" rel="stylesheet">
+	<link href="<%=request.getContextPath() %>/resources/css/goods/goods_section.css" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
