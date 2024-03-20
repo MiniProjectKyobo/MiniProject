@@ -4,44 +4,72 @@
 	<div class="breadcrumb_inner">해더 영역 - 제외할 곳</div>
 </section>
 <section class="contents_wrap">
-	<section class="contents_inner">
+	<section class="contents_inner contents_flex">
+		<!-- aside바 기본틀 -->
 		<aside class="aside_wrap">
-			<!-- aside바 기본틀 -->
 			<div class="aside_header">
-				<div class=" title_wrap">베스트셀러</div>
+				<div class=" title_wrap title_box">베스트셀러</div>
 			</div>
 			<div class="aside_body">
 				<ul>
-					<li>a</li>
-					<li>b</li>
-					<li>c</li>
-					<li>d</li>
-					<li>e</li>
-					<li>f</li>
+					<li>
+						<h1>종합베스트</h1>
+						<ul>
+							<li>주간</li>
+							<li>월간</li>
+							<li>연간</li>
+						</ul>
+					</li>
+					<li><h1>온라인 베스트</h1>
+						<ul>
+							<li>일간</li>
+							<li>주간</li>
+							<li>월간</li>
+
+						</ul></li>
+					<li>
+						<h1>실시간 베스트</h1>
+					</li>
+					<li>
+						<h1>매장별 베스트</h1>
+					</li>
+					<li><h1>온라인 베스트</h1>
+						<ul>
+							<li>일간</li>
+							<li>주간</li>
+							<li>월간</li>
+							<li>
+								<h1>스터디 셀러</h1>
+							</li>
+						</ul></li>
 				</ul>
 			</div>
 		</aside>
+		<!-- contents -->
 		<section>
-			<div class="title_wrap sub_title_wrap">
-				<h1 class="title_heading ">온라인 일간 베스트</h1>
-				<div>인터넷에서 판매되는 상품의 지난 하루간 가장 많이 판매된 순위입니다.</div>
+			<div class="title_wrap title_size_lg has_sub_title">
+				<h1 class="title_heading">온라인 일간 베스트</h1>
+				<div class="sub_title_wrap">인터넷에서 판매되는 상품의 지난 하루간 가장 많이 판매된
+					순위입니다.</div>
 			</div>
-			<div class="tab_wrap titile_wrap">
+			<div class="tab_wrap title_wrap">
 				<div>
-					<ul>
-						<li>전체</li>
-						<li>국내도서</li>
-						<li>외국도서</li>
-						<li>교보 only</li>
-						<li>eBook</li>
-						<li>sam</li>
-						<li>핫트렉스</li>
+					<ul class="title_tab">
+						<li><a><span class="tab_text">전체</span></a></li>
+						<li><a><span class="tab_text">국내도서</span></a></li>
+						<li><a><span class="tab_text">외국도서</span></a></li>
+						<li><a><span class="tab_text">교보 only</span></a></li>
+						<li><a><span class="tab_text">eBook</span></a></li>
+						<li><a><span class="tab_text">sam</span></a></li>
+						<li><a><span class="tab_text">핫트렉스</span></a></li>
 					</ul>
-					tab list - 전체 국내도서 외국도서
+
 				</div>
 				<div class="tab_content">
-					<div>list date</div>
-					<div>list sort</div>
+					<div class="list_wrap">
+						<span class="font_sort">2024년 03월 13일 ~ 2024년 03월 19일</span>
+					</div>
+					<div>1 2 3 4 5 6 7</div>
 					<div>
 						view list
 						<ul>
