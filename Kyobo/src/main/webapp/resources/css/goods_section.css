@@ -18,9 +18,27 @@ section .aside_body{
 }
 */
 section .title_wrap{
-	padding-bottom: 30px;
+	width:100%;
+	position:relative;
+
+	display:flex;
+	justify-content:flex-start;
+	align-items:conter;
+	flex-direction: row;
+
+}
+section .sub_title_wrap{
+		padding-bottom: 30px;
 }
 section .tab_wrap{
 	padding:0;
 	width: 100%;
 }
+section .title_heading{
+	
+}
+/*
+section .tab_content >ul> li{
+	border:1px solid black;
+}
+*/
