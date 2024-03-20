@@ -18,7 +18,9 @@
      	<input type="hidden" name="_csrf" value="3b6a352a-f906-45a6-9805-b04e233cacdd">
         	<h2 class="title_heading">회원정보 입력</h2><!-- 수정 220509 SEO H태그 적용 -->
             <div class="right_area"> <!-- 수정 220405 right_area 추가 -->
-                <span class="required"><span class="text">필수 입력</span></span>
+                <span class="required">
+                	<span class="text">필수 입력</span>
+                </span>
             </div>
         </div>
 
@@ -38,7 +40,7 @@
       				<div class="form_cont">
           				<div class="valid_check fail">
             				<div class="awesomplete">
-            					<input type="text" class="form_ip" id="formJoin01" placeholder="아이디를 입력해 주세요." maxlength="50" data-autocomplete="" autocomplete="off" aria-expanded="false" aria-owns="awesomplete_list_1" role="combobox">
+            					<input type="text" class="form_ip" id="formJoin01" placeholder="아이디를 입력해 주세요." maxlength="50"  autocomplete="off">
             				<span class="valid_desc">아이디를 입력해 주세요.</span>		
             				</div>
             			</div>
@@ -58,27 +60,15 @@
       				<div class="form_cont">
           				<div class="form_ip_pw">
             				<input type="password" class="form_ip" placeholder="비밀번호를 입력해 주세요." id="formJoin02" maxlength="15">
-            				<button type="button" class="btn_toggle_pw">
-            					<span class="hidden">비밀번호 숨김 상태</span>
+            				<button type="button" class="btn_toggle_pw active">
+            					<span class="hidden">비밀번호 보임 상태</span>
             				</button>
             			</div>
             			
           				 <div class="pw_valid_wrap">
-            				<div class="valid_step_box">
-                				<ol class="valid_step_list">
-                    				<li class="step_item"><span class="hidden">안전도 낮음</span></li>
-                   					<li class="step_item"><span class="hidden">안전도 보통</span></li>
-                    				<li class="step_item"><span class="hidden">안전도 높음</span></li>
-                				</ol>
-                				<div class="bubble_speech_box">
-                    				<span class="valid_state">안전도</span>
-                				</div>
-            				</div>
-
             				<ul class="pw_valid_list">
                 				<li class="pw_valid_item">영문, 숫자, 특수문자 3가지 조합 8자리 이상 또는<br>2가지 조합 10자리 이상</li>
                 				<li class="pw_valid_item">공백 및 3자 이상의 연속 또는 중복 문자는 사용 불가</li>
-                				<li class="pw_valid_item" style="display: none;">생일, 전화번호, 아이디 등 개인신상 정보 사용 불가</li>
             				</ul>
         				</div>
       				</div>
@@ -143,7 +133,9 @@
 		                  		<div class="valid_check">
 		                      		<div class="input_btn_box">
 		                          		<input type="text" maxlength="13" id="formJoin07" class="form_ip" placeholder="숫자만 입력해 주세요." disabled="">
-		                          		<button type="button" class="btn_ip btn_light_gray" style="display: none;"></button>
+		                          		<button type="button" class="btn_ip btn_light_gray">
+		                          			<span class="text">인증번호 발송</span>
+		                          		</button>
 		                  			</div>
 		              			</div>
 		              		</div>
@@ -198,13 +190,13 @@
 		                	
 		                		<div class="form_filter_box">
 		                   			<span class="form_filter">
-		                        		<input id="rdoFilter02" type="radio" name="rdoFilter" disabled="disabled">
+			                        	<input  type="radio" id="rdoFilter02" name="rdoFilter" disabled="disabled">
 		                        		<label for="rdoFilter02">
 		                        			<span class="text">남</span>
 		                        		</label>
 		                    		</span>
 		                    		<span class="form_filter">
-		                        		<input id="rdoFilter01" type="radio" name="rdoFilter" disabled="disabled">
+			                        	<input  type="radio" id="rdoFilter01" name="rdoFilter" disabled="disabled">
 		                        		<label for="rdoFilter01">
 		                        			<span class="text">여</span>
 		                        		</label>
@@ -237,15 +229,16 @@
         	<ul class="chk_col_list">
             	<li class="chk_col_item">
     				<span class="form_chk">
-       					 <input id="kyoboBook" type="checkbox" name="check1" data-type="require">
+       					<input type="checkbox" id="kyoboBook"name="check1">
         				<label for="kyoboBook">
-            				교보문고 이용약관 
+       					 	<span class="text">교보문고 이용약관</span>
+            			</label>
             				<span class="fc_green">(필수)</span>
-        				</label>
+        				</form>
    					 </span>
     				
     				 <div class="right_box">
-        				<button type="button" class="btn_more_view" data-role="btn-dialog" data-target="#popTerm" data-code="001">
+        				<button type="button" class="btn_more_view" >
             				<span class="text">내용보기</span>
             				<span class="ico_arw"></span>
         				</button>
@@ -254,7 +247,7 @@
 
             	<li class="chk_col_item">
     				<span class="form_chk">
-        				<input id="collectionUsage" type="checkbox" name="check1" data-type="require">
+        				<input type="checkbox" id="collectionUsage" name="check1">
         				<label for="collectionUsage">
             				개인정보 수집 및 이용 동의 
             				<span class="fc_green">(필수)</span>
@@ -262,7 +255,7 @@
     				</span>
     
     				<div class="right_box">
-       					<button type="button" class="btn_more_view" data-role="btn-dialog" data-target="#popTerm" data-code="005">
+       					<button type="button" class="btn_more_view">
             				<span class="text">내용보기</span>
             				<span class="ico_arw"></span>
         				</button>
@@ -271,15 +264,15 @@
 
             	 <li class="chk_col_item">
     				<span class="form_chk">
-        				<input id="consignment" type="checkbox" name="check1" data-type="require">
-        					<label for="consignment">
+        				<input type="checkbox" id="consignment"  name="check1">
+        				<label for="consignment">
             					개인정보 처리 위탁 동의 
            						<span class="fc_green">(필수)</span>
         					</label>
     				 </span>
     				
     				 <div class="right_box">
-        				<button type="button" class="btn_more_view" data-role="btn-dialog" data-target="#popTerm" data-code="006">
+        				<button type="button" class="btn_more_view">
             				<span class="text">내용보기</span>
             				<span class="ico_arw"></span>
         				</button>
@@ -293,7 +286,7 @@
         	<ul class="chk_col_list">
             	<li class="chk_col_item">
     				<span class="form_chk">
-        				<input id="personal" type="checkbox" name="check3" data-type="selective">
+        				<input type="checkbox" id="personal" name="check3">
         				<label for="personal">
             				개인정보 수집 및 이용 동의 
             				<span class="desc_gray">(선택)</span>
@@ -301,7 +294,7 @@
     				</span>
     				
     				<div class="right_box">
-        				<button type="button" class="btn_more_view" data-code="005" data-role="btn-dialog" data-target="#popTerm">
+        				<button type="button" class="btn_more_view" >
             				<span class="text">내용보기</span>
             				<span class="ico_arw"></span>
         				</button>
@@ -311,7 +304,7 @@
             	 <li class="chk_col_item">
                 	<div class="marketing_agree_area">
                     	<span class="form_chk">
-                        	<input id="kyoboLifePlanet" type="checkbox" name="check3" data-type="selective">
+                        	<input  type="checkbox" id="kyoboLifePlanet" name="check3">
                         	<label for="kyoboLifePlanet">
                             	교보라이프플래닛 제3자 정보제공 동의 
                             	<span class="desc_gray">(선택)</span>
@@ -319,7 +312,7 @@
                     	</span>
                     	
                     	<div class="right_box">
-                        	<button type="button" class="btn_more_view" data-code="008" data-role="btn-dialog" data-target="#popTerm">
+                        	<button type="button" class="btn_more_view" >
                             	<span class="text">내용보기</span>
                             	<span class="ico_arw"></span>
                         	</button>
@@ -330,7 +323,7 @@
                         	<ul class="chk_row_list">
                             	<li class="chk_row_item type_all">
                                 	<span class="form_chk">
-                                    	<input id="termsMarketingChk2" type="checkbox" name="check3" readonly="" data-type="selective">
+	                                    <input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="">
                                     	<label for="termsMarketingChk2" class="fc_gray">
                                     		마케팅 수신 동의 
                                     		<span class="desc_gray">(선택)</span>
@@ -339,13 +332,13 @@
                             	</li>
                             	<li class="chk_row_item">
                                 	<span class="form_chk">
-                                    	<input id="termsMarketingChk201" type="checkbox" name="check3" readonly="" data-type="selective">
                                     	<label for="termsMarketingChk201" class="fc_gray">SMS</label>
+	                                    	<input id="termsMarketingChk201" type="checkbox" name="check3" readonly="">
                                 	</span>
                             	</li>
                             	<li class="chk_row_item fc_">
                                 	<span class="form_chk">
-                                    	<input id="termsMarketingChk202" type="checkbox" name="check3" readonly="" data-type="selective">
+	                                    <input type="checkbox" id="termsMarketingChk202" name="check3" readonly="" >
                                     	<label for="termsMarketingChk202" class="fc_gray">이메일</label>
                                 	</span>
                             	</li>
@@ -358,7 +351,7 @@
             <li class="chk_col_item">
                 <div class="marketing_agree_area">
                     <span class="form_chk">
-                        <input id="termsMarketingChk" type="checkbox" name="check2" data-type="selective">
+	                        <input type="checkbox" id="termsMarketingChk" name="check2">
                         <label for="termsMarketingChk">
                         	교보문고 마케팅 수신 동의 
                         	<span class="desc_gray">(선택)</span>
@@ -370,13 +363,13 @@
                         <ul class="chk_row_list">
                             <li class="chk_row_item">
                         		<span class="form_chk">
-                            		<input id="sms" type="checkbox" name="check2" data-type="selective">
+	                            		<input type="checkbox" id="sms" name="check2">
                             		<label for="sms">SMS</label>
                         		</span>
                             </li>
                             <li class="chk_row_item">
                         		<span class="form_chk">
-                            		<input id="email" type="checkbox" name="check2" data-type="selective">
+                            		<input type="checkbox" id="email" name="check2">
                             		<label for="email">이메일</label>
                         		</span>
                             </li>
