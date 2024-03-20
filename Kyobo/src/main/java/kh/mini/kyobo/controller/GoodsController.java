@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class MainController
+ * Servlet implementation class GoodsController
  */
-@WebServlet("/main")
-public class MainController extends HttpServlet {
+@WebServlet("/goods")
+public class GoodsController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MainController() {
+    public GoodsController() {
         super();
     }
 
@@ -25,9 +25,7 @@ public class MainController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	request.getRequestDispatcher("WEB-INF/views/main/main.jsp").forward(request, response);
-	
+		request.getRequestDispatcher("/WEB-INF/views/goods.jsp").forward(request, response);
 	}
-
 
 }

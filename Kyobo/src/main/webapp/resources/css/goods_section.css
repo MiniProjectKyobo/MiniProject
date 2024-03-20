@@ -1,0 +1,26 @@
+@charset "UTF-8";
+section .contents_inner{
+	display: flex;
+	justify-content: flex-start;
+	align-items:flex-start;
+	flex-direction:row;
+}
+section .aside_wrap{
+	width:170px;
+	padding-right:46px ;
+}
+section .aside_header{
+	margin-bottom: 30px;
+}
+/*
+section .aside_body{
+
+}
+*/
+section .title_wrap{
+	padding-bottom: 30px;
+}
+section .tab_wrap{
+	padding:0;
+	width: 100%;
+}

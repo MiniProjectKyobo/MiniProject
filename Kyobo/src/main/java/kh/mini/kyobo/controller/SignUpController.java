@@ -8,26 +8,29 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class MainController
+ * Servlet implementation class SignUpController
  */
-@WebServlet("/main")
-public class MainController extends HttpServlet {
+@WebServlet("/signup")
+public class SignUpController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MainController() {
+    public SignUpController() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	request.getRequestDispatcher("WEB-INF/views/main/main.jsp").forward(request, response);
-	
+
+		request.getRequestDispatcher("/WEB-INF/views/signup.jsp").forward(request, response);
+		
 	}
 
+	
 
 }
