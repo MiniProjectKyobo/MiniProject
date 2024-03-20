@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class imformtionController
  */
-@WebServlet("/ImformtionController")
+@WebServlet("/information")
 public class InformationController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
      /**  
@@ -22,8 +22,8 @@ public class InformationController extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("/WEB-INF/views/information.jsp").append(request.getContextPath());
+		request.getRequestDispatcher("/WEB-INF/views/information.jsp").forward(request, response);
+		
 	}
 
 
