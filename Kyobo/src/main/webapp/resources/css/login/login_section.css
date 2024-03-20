@@ -12,12 +12,12 @@
     border-radius: 6px;
 }
 
-.btn_wrap justify{
+.btn_wrap justify {
 	display:flex;
 	min-width: auto;
 }
 
-#loginBtn{
+#loginBtn {
 	color: #fff;
 	border: 1px solid #767676;
 	background: #bebebe;
@@ -30,7 +30,7 @@ button.btn_lg {
     border-radius: 6px;
 }
 
-.text{
+.text {
 	display: inline-block;
     position: relative;
     vertical-align: top;
@@ -82,4 +82,14 @@ a.btn_text_link{
     box-sizing: border-box;
 }
 
+.btn_wrap justify{
+	display:flex;
+}
 
+a.btn_lg btn_line_primary{
+	border:1px solid #5055b1;
+	color: #474c98;
+	background: #fff;
+	min-width: auto;
+	
+}

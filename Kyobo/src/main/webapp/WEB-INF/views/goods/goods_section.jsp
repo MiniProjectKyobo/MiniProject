@@ -53,18 +53,18 @@
 					순위입니다.</div>
 			</div>
 			<div class="tab_wrap title_wrap">
-				<div>
-					<ul class="title_tab">
-						<li><a><span class="tab_text">전체</span></a></li>
-						<li><a><span class="tab_text">국내도서</span></a></li>
-						<li><a><span class="tab_text">외국도서</span></a></li>
-						<li><a><span class="tab_text">교보 only</span></a></li>
-						<li><a><span class="tab_text">eBook</span></a></li>
-						<li><a><span class="tab_text">sam</span></a></li>
-						<li><a><span class="tab_text">핫트렉스</span></a></li>
-					</ul>
 
-				</div>
+				<ul class="title_tab">
+					<li class="tab_text"><a><span>전체</span></a></li>
+					<li class="tab_text"><a><span>국내도서</span></a></li>
+					<li class="tab_text"><a><span>외국도서</span></a></li>
+					<li class="tab_text"><a><span>교보 only</span></a></li>
+					<li class="tab_text"><a><span>eBook</span></a></li>
+					<li class="tab_text"><a><span>sam</span></a></li>
+					<li class="tab_text"><a><span>핫트렉스</span></a></li>
+				</ul>
+
+
 				<div class="tab_content">
 					<div class="list_wrap">
 						<span class="font_sort">2024년 03월 13일 ~ 2024년 03월 19일</span>
