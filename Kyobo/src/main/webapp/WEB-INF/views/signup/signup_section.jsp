@@ -190,13 +190,13 @@
 		                	
 		                		<div class="form_filter_box">
 		                   			<span class="form_filter">
-		                        		<input  type="radio" id="rdoFilter02" name="rdoFilter" disabled="disabled">
+			                        	<input  type="radio" id="rdoFilter02" name="rdoFilter" disabled="disabled">
 		                        		<label for="rdoFilter02">
 		                        			<span class="text">남</span>
 		                        		</label>
 		                    		</span>
 		                    		<span class="form_filter">
-		                        		<input  type="radio" id="rdoFilter01" name="rdoFilter" disabled="disabled">
+			                        	<input  type="radio" id="rdoFilter01" name="rdoFilter" disabled="disabled">
 		                        		<label for="rdoFilter01">
 		                        			<span class="text">여</span>
 		                        		</label>
@@ -229,11 +229,12 @@
         	<ul class="chk_col_list">
             	<li class="chk_col_item">
     				<span class="form_chk">
-       					 <input id="kyoboBook" type="checkbox" name="check1">
+       					<input type="checkbox" id="kyoboBook"name="check1">
         				<label for="kyoboBook">
-            				교보문고 이용약관 
+       					 	<span class="text">교보문고 이용약관</span>
+            			</label>
             				<span class="fc_green">(필수)</span>
-        				</label>
+        				</form>
    					 </span>
     				
     				 <div class="right_box">
@@ -264,7 +265,7 @@
             	 <li class="chk_col_item">
     				<span class="form_chk">
         				<input type="checkbox" id="consignment"  name="check1">
-        					<label for="consignment">
+        				<label for="consignment">
             					개인정보 처리 위탁 동의 
            						<span class="fc_green">(필수)</span>
         					</label>
@@ -311,7 +312,7 @@
                     	</span>
                     	
                     	<div class="right_box">
-                        	<button type="button" class="btn_more_view" data-code="008" data-role="btn-dialog" data-target="#popTerm">
+                        	<button type="button" class="btn_more_view" >
                             	<span class="text">내용보기</span>
                             	<span class="ico_arw"></span>
                         	</button>
@@ -322,7 +323,7 @@
                         	<ul class="chk_row_list">
                             	<li class="chk_row_item type_all">
                                 	<span class="form_chk">
-                                    	<input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="" data-type="selective">
+	                                    <input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="">
                                     	<label for="termsMarketingChk2" class="fc_gray">
                                     		마케팅 수신 동의 
                                     		<span class="desc_gray">(선택)</span>
@@ -331,13 +332,13 @@
                             	</li>
                             	<li class="chk_row_item">
                                 	<span class="form_chk">
-                                    	<input id="termsMarketingChk201" type="checkbox" name="check3" readonly="" data-type="selective">
                                     	<label for="termsMarketingChk201" class="fc_gray">SMS</label>
+	                                    	<input id="termsMarketingChk201" type="checkbox" name="check3" readonly="">
                                 	</span>
                             	</li>
                             	<li class="chk_row_item fc_">
                                 	<span class="form_chk">
-                                    	<input type="checkbox" id="termsMarketingChk202" name="check3" readonly="" data-type="selective">
+	                                    <input type="checkbox" id="termsMarketingChk202" name="check3" readonly="" >
                                     	<label for="termsMarketingChk202" class="fc_gray">이메일</label>
                                 	</span>
                             	</li>
@@ -350,7 +351,7 @@
             <li class="chk_col_item">
                 <div class="marketing_agree_area">
                     <span class="form_chk">
-                        <input type="checkbox" id="termsMarketingChk" name="check2">
+	                        <input type="checkbox" id="termsMarketingChk" name="check2">
                         <label for="termsMarketingChk">
                         	교보문고 마케팅 수신 동의 
                         	<span class="desc_gray">(선택)</span>
@@ -362,7 +363,7 @@
                         <ul class="chk_row_list">
                             <li class="chk_row_item">
                         		<span class="form_chk">
-                            		<input type="checkbox" id="sms" name="check2">
+	                            		<input type="checkbox" id="sms" name="check2">
                             		<label for="sms">SMS</label>
                         		</span>
                             </li>
