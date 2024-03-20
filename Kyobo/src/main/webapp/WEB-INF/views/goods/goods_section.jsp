@@ -74,10 +74,20 @@
 						<!-- 책 리스트 -->
 						<ul>
 							<li class="prod_item">
-								<div></div>
-								<div></div>
-								<div></div>
-								<div></div>
+								<div class="prod_chk_group">
+									<span class="material-icons"> check_circle_outline </span>
+								</div>
+								<div class="prod_area">이미지</div>
+								<div class="prod_order_state">배송 날짜</div>
+								<div class="prod_btn_wrap">
+									<div class="btn_wish_icon ">
+										<span class="material-icons"> favorite_border </span>
+									</div>
+									<div>
+										<div>장바구니</div>
+										<div>바로구매</div>
+									</div>
+								</div>
 							</li>
 							<li class="prod_item">광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는
 								자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다. 모든 국민은 능력에

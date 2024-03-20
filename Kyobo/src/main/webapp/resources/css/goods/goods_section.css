@@ -1,30 +1,35 @@
 @charset "UTF-8";
-.contents_wrap .wrapper .header_wrapper .header_wrapper{
+
+.contents_wrap .wrapper .header_wrapper .header_wrapper {
 	position: relative;
 	background-color: #fff;
 	border-bottom: 1px solid #eaeaea;
 	z-index: 1000;
 }
+
 .contents_wrap
 .wrapper
-.container_wrapper{
+.container_wrapper {
 	min-height: calc(100vh - 80px);
 	display: block;
 	padding-top: 42px;
 }
 
-section .breadcrumb_inner{
+section .breadcrumb_inner {
 	position: relative;
-    width: 1200px;
-    margin: 0 auto;
+	width: 1200px;
+	margin: 0 auto;
 }
+
 .contents_wrap .breadcrumb_wrap {
 	width: 1200px;
 	margin: 0 auto;
 }
-.contents_wrap .aside_header{
+
+.contents_wrap .aside_header {
 	margin-bottom: 30px;
 }
+
 .contents_wrap .contents_flex {
 	display: flex;
 	justify-content: flex-start;
@@ -64,13 +69,12 @@ section .breadcrumb_inner{
 	display: inline-box;
 }
 
-
 /*  부모 클래스 찾아보기 height : 44px;*/
-.contents_wrap .tab_list_wrap { 
+.contents_wrap .tab_list_wrap {
 	height: 44px;
 }
 
-section .title_tab { 
+section .title_tab {
 	display: flex;
 	flex-wrap: nowrap;
 	width: 100%;
@@ -79,13 +83,15 @@ section .title_tab {
 	justify-content: space-around;
 	border-radius: 6px 6px 0 0;
 	background: #fff;
-	align-items:center;
-	flex : 1;
+	align-items: center;
+	flex: 1;
+	justify-content: space-around;
+	box-sizing: border-box;
 }
 
 .contents_wrap .title_tab>li {
-	display:inline-block;
-	border:1px solid black;
+	display: inline-block;
+	border: 1px solid black;
 	padding: 0 14px;
 	line-height: 22px;
 }
@@ -121,14 +127,52 @@ section .title_tab {
 	letter-spacing: -0.01em;
 	font-weight: 500;
 }
-.contents_wrap .line{
+
+.contents_wrap .line {
 	padding-top: 30px;
-	 border-top: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5;
 }
 /*책 리스트 부분*/
+.contents_wrap .prod_item {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+}
 
-.contents_wrap .prod_item:not(:first-of-type){
-    padding-top: 36px;
-    margin-top: 36px;
-    border-top: 1px solid #eaeaea;	
+.contents_wrap .prod_item:not(:first-of-type) {
+	padding-top: 36px;
+	margin-top: 36px;
+	border-top: 1px solid #eaeaea;
+}
+
+/* 책 정보 */
+/* 체크박스 */
+.contents_wrap .prod_item>.prod_chk_group {
+	margin-right: 10px;
+}
+/* 책 이미지 및 정보 */
+.contents_wrap .prod_item>.prod_area {
+	flex: 0 1 auto;
+	align-items: flex-start;
+	max-width: 674px;
+}
+/* 주문안내 */
+.contents_wrap .prod_item>.prod_order_state {
+	text-align: center;
+	margin: 48px 0 35px 0;
+	width: 100px;
+	/* flex-shrink: 0;  필요시 추가*/
+}
+/* 구매칸 */
+.contents_wrap .prod_item>.prod_btn_wrap {
+	/* flex-shrink: 0; */
+	width: 135px;
+	margin-left: auto;
+	text-align: right;
+}
+
+.contents_wrap .prod_item>.prod_btn_wrap>.btn_wish_icon {
+	/* flex-shrink: 0; */
+	margin-bottom: 24px;
 }
