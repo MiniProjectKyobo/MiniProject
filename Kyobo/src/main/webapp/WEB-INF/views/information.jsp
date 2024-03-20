@@ -1,5 +1,4 @@
 <link href="<%=request.getContextPath()%>/resources/css/purchase_styles.css" rel="stylesheet">
-
 <link href="<%=request.getContextPath()%>/resources/css/reset.css" rel="stylesheet">
 
 
