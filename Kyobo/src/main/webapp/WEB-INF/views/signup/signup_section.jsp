@@ -13,7 +13,7 @@
     		</ol>
 		</div>
      </div>
-
+     
      <div class="title_wrap title_size_def">
      	<input type="hidden" name="_csrf" value="3b6a352a-f906-45a6-9805-b04e233cacdd">
         	<h2 class="title_heading">회원정보 입력</h2><!-- 수정 220509 SEO H태그 적용 -->
@@ -198,13 +198,13 @@
 		                	
 		                		<div class="form_filter_box">
 		                   			<span class="form_filter">
-		                        		<input id="rdoFilter02" type="radio" name="rdoFilter" disabled="">
+		                        		<input id="rdoFilter02" type="radio" name="rdoFilter" disabled="disabled">
 		                        		<label for="rdoFilter02">
 		                        			<span class="text">남</span>
 		                        		</label>
 		                    		</span>
 		                    		<span class="form_filter">
-		                        		<input id="rdoFilter01" type="radio" name="rdoFilter" disabled="">
+		                        		<input id="rdoFilter01" type="radio" name="rdoFilter" disabled="disabled">
 		                        		<label for="rdoFilter01">
 		                        			<span class="text">여</span>
 		                        		</label>
