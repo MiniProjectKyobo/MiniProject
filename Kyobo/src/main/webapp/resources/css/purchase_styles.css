@@ -1,17 +1,22 @@
 @charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+  }
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.1em;
     line-height: 1.2em;
 }
+
 #book_title {
     text-align: center;
     color: black;
     font-size: 28px;
     line-height: 42px;
 }
+
 .aside_alert {
     color: #595959;
     font-size: 13px;
@@ -21,22 +26,27 @@ body{
     border-radius: 12px;
 
 }
+
 .aside_delivery {
     color: black;
     font-size: 14px;
-    line-height: 12px;
+    line-height: 25px;
     padding: 5px;
 }
+
+
 .aside {
     display: flex;
     flex-direction: column;
 
 }
+
 #bottom_table {
     display: flex;
     justify-content: center;
     height: 800px;
 }
+
 .event {
     display: flex;
     flex-wrap: wrap;
@@ -46,11 +56,13 @@ body{
     grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
     
 }
+
 .event>* {
     margin: 15px;
     flex: 0 1 250px;
   }
-  .bestsellers {
+
+.bestsellers {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -59,12 +71,14 @@ body{
 
 
 }
+
 .bestsellers>* {
     margin: 15px;
     flex: 0 1 100px;
 
   }
-  .product_footer {
+
+.product_footer {
     position: fixed;
     height: 75px;
     bottom: 0;
@@ -75,11 +89,13 @@ body{
     border-top: 1px solid lightgray;
     min-width: 1000px;
 }
+
 .product_details {
     display: flex;
     justify-content: space-between;
 
 }
+
 .left {
     padding: 24px;
 }
@@ -92,6 +108,7 @@ body{
 .product_details > .left > #price {
     font-size: 24px;
 }
+
 .product_details > .left > #pricelabel {
     font-size: 18px;
     margin-left: 75px;
@@ -123,8 +140,9 @@ body{
   #main > nav {
     background: white;
   }
-  
-   #main > aside {
+
+
+  #main > aside {
     background: white;
   }
   #main > nav {
@@ -144,6 +162,7 @@ body{
     margin-right: 75px;
 
 }
+
 #aside_price {
     color: #000;
     font-size: 24px;
@@ -163,6 +182,8 @@ body{
     margin-right: 75px;
 
 }
+
+
 .book_image {
     display: block;
     margin-left: auto;
@@ -181,6 +202,7 @@ body{
     border-radius: 16px;
 
 }
+
 .bestseller_image {
     display: block;
     width: 90px;
@@ -195,6 +217,7 @@ body{
     font-weight: 550;
     padding: 10px;
 }
+
 .event_date {
     display: block;
     color: #595959;
@@ -210,7 +233,7 @@ width: 500px;
 padding: 25px;
 
 }
- 
-  
+
+
   
   
