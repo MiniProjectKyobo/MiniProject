@@ -29,7 +29,7 @@ section .title_wrap {
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
-	align-items: conter;
+	align-items: center;
 	flex-direction: column;
 }
 
@@ -42,12 +42,11 @@ section .sub_title_wrap {
 	padding-bottom: 30px;
 }
 
-section .tab_wrap {
+/* section .tab_wrap {
 	padding: 0;
 	width: 100%;
 	position: relative;
-}
-
+} */
 section .title_wrap>li {
 	display: inline-box;
 }
@@ -55,13 +54,19 @@ section .title_wrap>li {
 section .title_tab {
 	display: flex;
 	flex-wrap: nowrap;
+	width: 100%;
+	height: 100%;
 	justify-content: space-around;
 	box-sizing: border-box;
+	justify-content: space-around;
+	height: 100%;
+	border-radius: 6px 6px 0 0;
+	background: #fff;
 }
 
-section .title_tab>a {
+section .title_tab>li {
 	padding: 0 14px;
-
+	line-height: 22px;
 }
 
 /* first second 코드 참고할 것  */
@@ -69,7 +74,6 @@ section .title_tab>.tab_text {
 	font-weight: 500;
 	padding-bottom: 2px;
 	font-size: 14px;
-	line-height: 22px;
 	letter-spacing: -0.01em;
 	display: block;
 	box-sizing: border-box;
@@ -86,13 +90,14 @@ section .list_wrap {
 	border-radius: 10px;
 	background-color: #f7f7f7;
 }
-section .font_sort{
-	    display: block;
-    padding-left: 8px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: -0.01em;
-    font-weight: 500;
+
+section .font_sort {
+	display: block;
+	padding-left: 8px;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -0.01em;
+	font-weight: 500;
 }
 
 /*
