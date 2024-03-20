@@ -8,7 +8,7 @@
 <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper contents_cart ">
+<div class="wrapper contents_cart">
 	<header class="header_wrapper">
 		<%@include file="/WEB-INF/views/cart/cart_header.jsp"%>
 	</header>
