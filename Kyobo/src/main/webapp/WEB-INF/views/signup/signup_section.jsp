@@ -73,9 +73,6 @@ $("#formJoin01").on("blur", function(){
       				<div class="form_cont">
           				<div class="form_ip_pw">
             				<input type="password" class="form_ip" placeholder="비밀번호를 입력해 주세요." id="formJoin02" maxlength="15">
-            				<button type="button" class="btn_toggle_pw">
-            					<span class="hidden"></span>
-            				</button>
             			</div>
             			
           				 <div class="pw_valid_wrap">
@@ -103,7 +100,12 @@ $("#formJoin01").on("blur", function(){
       				</div>
     			</div>
 
+<script>
 
+
+
+</script>
+    
     			<div class="form_box">
         			<div class="form_title">
           				<label for="formJoin03" class="form_label">
@@ -137,11 +139,11 @@ $(function(){
 		if(pwd1 == pwd2) {
 			$(".valid_check_success").show();
 			$(".valid_check_fail").hide();
-			$("#valid_desc").html("일치합니다");
+			$("#valid_desc").html("일치").css('color', 'green');
 		} else {
 			$(".valid_check_success").hide();
 			$(".valid_check_fail").show();
-			$("#valid_desc").html("불일치합니다");
+			$("#valid_desc").html("불일치").css('color', 'red');
 		}
 	}
 	});
@@ -262,6 +264,24 @@ $(function(){
   	 <div class="title_wrap title_size_def">
     	<p class="title_heading">서비스 이용약관 동의</p>
 	 </div>
+
+
+<script>
+
+$(document).ready(function(){
+	$("#termsAllChk").click(function(){
+		if($("#termsAllChk").prop("checked")) {
+			$("input[type='checkbox']").prop("checked", true);
+		}else {
+			$("input[type='checkbox']").prop("checked", false);
+		}
+	});
+});
+
+
+
+
+</script>
 
 	 <div class="terms_agree_chk_wrap">
     	<div class="terms_agree_row">
