@@ -25,7 +25,7 @@
 			</div>
 			
 			<div class="btn_wrap justify">
-				<button class="btn_lg btn_light_gray" id="loginBtn">
+				<button class="btn_lg" id="loginBtn">
 					<span class="text">로그인</span>
 				</button>
 			</div>
@@ -42,12 +42,12 @@
 			
 			<div class="join_induce_wrap">
 				<div class="btn_wrap justify">
-				<a href="#" class="btn_lg btn_line_primary">
+				<a href="http://127.0.0.1:8080/kyobo/signup" class="btn_lg btn_line_primary">
 				<span class="text">회원가입</span>
 				</a>
 				</div>
 				<div class="btn_wrap justify">
-					<a class="btn_lg btn_line_gray">
+					<a class="btn_lg">
 					<span class="text">비회원주문</span>
 					</a>
 				</div>

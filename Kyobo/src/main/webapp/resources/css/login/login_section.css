@@ -21,9 +21,10 @@ min-height: calc(100vh - 54px - 68px - 250px);
    box-sizing: border-box;
    border-radius: 6px;
 }
-.btn_wrap justify {
+.btn_wrap{
 	display:flex;
 	min-width: auto;
+	margin-top: 20px;
 }
 #loginBtn {
 	color: #fff;
@@ -31,11 +32,30 @@ min-height: calc(100vh - 54px - 68px - 250px);
 	background: #bebebe;
    border-color: #bebebe;
 }
+
 button.btn_lg {
 	height: 50px;
    padding: 0 23px 1px;
    border-radius: 6px;
+   
+   border:1px solid #5055b1;
+	color: #474c98;
+	background: #fff;
+	min-width: auto;
+	
 }
+
+.btn_lg{
+	height: 50px;
+   padding: 0 23px 1px;
+   border-radius: 6px;
+   
+   border:1px solid #c0c0c0;
+	color: #000000;
+	background:#ffffff;
+	min-width: auto;
+}
+
 .text {
 	display: inline-block;
    position: relative;
@@ -82,10 +102,6 @@ a.btn_text_link{
    box-sizing: border-box;
 }
 a.btn_lg btn_line_primary{
-	border:1px solid #5055b1;
-	color: #474c98;
-	background: #fff;
-	min-width: auto;
 	
 }
 

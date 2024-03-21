@@ -8,13 +8,14 @@
 <html>
 <head>
 <link href="<%=request.getContextPath()%>/resources/css/components.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <meta charset="UTF-8">
 <title>Sign Up</title>
 
 
 </head>
 <body>
-	<div class="wrapper member_login id=mainDiv">
+	<div class="wrapper member_login" id="mainDiv">
 		<header class="header_wrapper">
 			<%@include file="/WEB-INF/views/signup/signup_header.jsp"%>
 		</header>
