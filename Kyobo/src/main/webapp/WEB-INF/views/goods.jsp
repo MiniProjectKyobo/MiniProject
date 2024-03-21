@@ -1,8 +1,15 @@
-<link href="${pageContext.request.contextPath}/resources/css/reset.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/resources/css/components.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/resources/css/goods/goods_section.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/resources/css/goods/goods_footer.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/resources/css/reset.css"
+	rel="stylesheet">
+<link href="<%=request.getContextPath()%>/resources/css/style.css"
+	rel="stylesheet">
+<link href="<%=request.getContextPath()%>/resources/css/components.css"
+	rel="stylesheet">
+<link
+	href="<%=request.getContextPath()%>/resources/css/goods/goods_section.css"
+	rel="stylesheet">
+<link
+	href="<%=request.getContextPath()%>/resources/css/goods/goods_footer.css"
+	rel="stylesheet">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,7 +18,8 @@
 <meta charset="UTF-8">
 <title>goods page</title>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
 	<div class="wrapper">
