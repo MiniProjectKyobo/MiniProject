@@ -31,38 +31,48 @@
         			<div class="form_title">
           				<label for="formJoin01" class="form_label">
               					아이디
-              			<span class="required">
-                  			<span class="hidden">필수입력</span>
-             			</span>
           				</label>
         			</div>
 
       				<div class="form_cont">
           				<div class="valid_check fail">
             				<div class="awesomplete">
-            					<input type="text" class="form_ip" id="formJoin01" placeholder="아이디를 입력해 주세요." maxlength="50"  autocomplete="off">
-            				<span class="valid_desc">아이디를 입력해 주세요.</span>		
+            					<input type="text" class="form_ip" id="formJoin01" placeholder="아이디를 입력해 주세요." maxlength="20"  autocomplete="off">
+            				<span class="valid_desc"></span>		
             				</div>
             			</div>
             		</div>
             	</div>	
 
+<script>
+$("#formJoin08").on("blur", function(){
+	var idLength = $(this).val().trim().length;
+	var id = $(this).val().trim();
+	var msg = '';
+	if(idLength < 1) {
+		msg = '아이디를 입력해주세요.';
+	} else {
+		var regExp = /^[a-zA-Z][a-zA-Z0-9_-]{5,19}$/;
+		if(regExp.test(id) == false){
+			msg = "6~20자의 영문 소문자(숫자 조합 가능) 또는 이메일 형식으로 입력해 주세요";
+		}
+	}
+	$(".valid_desc").html(msg);
+});
+
+
+</script>
+
    				<div class="form_box">
         			<div class="form_title">
           				<label for="formJoin02" class="form_label">
               						비밀번호
-              				<span class="required">
-                  				<span class="hidden">필수입력</span>
-              				</span>
           				</label>
        				 </div>
 
       				<div class="form_cont">
           				<div class="form_ip_pw">
             				<input type="password" class="form_ip" placeholder="비밀번호를 입력해 주세요." id="formJoin02" maxlength="15">
-            				<button type="button" class="btn_toggle_pw active">
-            					<span class="hidden">비밀번호 보임 상태</span>
-            				</button>
             			</div>
             			
           				 <div class="pw_valid_wrap">
@@ -73,15 +83,13 @@
         				</div>
       				</div>
     			</div>
+
     
     
     			<div class="form_box">
         			<div class="form_title">
           				<label for="formJoin03" class="form_label">
               				비밀번호 확인
-             				<span class="required">
-                  				<span class="hidden">필수입력</span>
-              				</span>
           				</label>
        				</div>
 
@@ -149,9 +157,6 @@
 		       		<div class="form_title">
 		          		<label for="formJoin08" class="form_label">
 		             		 이메일
-		              		<span class="required">
-		                  		<span class="hidden">필수입력</span>
-		              		</span>
 		          		</label>
 		        	</div>
 		
@@ -177,9 +182,6 @@
 		        	<div class="form_title">
 		          		<label for="formJoin06" class="form_label">
 		              		생년월일/성별
-		              		<span class="required">
-		                  		<span class="hidden">필수입력</span>
-		              		</span>
 		          		</label>
 		        	</div>
 		
