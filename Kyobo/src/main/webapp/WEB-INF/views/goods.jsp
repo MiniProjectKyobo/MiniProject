@@ -2,6 +2,7 @@
 <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/components.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/goods/goods_section.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/resources/css/goods/goods_footer.css" rel="stylesheet">
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>

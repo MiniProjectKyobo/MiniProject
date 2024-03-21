@@ -1,15 +1,37 @@
 @charset "UTF-8";
  
- 
- .wrapper member_login{
+body{
+	height:100%;
+	min-width:1440px;
+}
+
+
+.header_wrapper{
+	width:100%;
+}
+.header_inner{
+	margin:0 auto;
+}
+
+.wrapper_member_login{
  display:flex;
+ flex-direction: column;
+ padding-top: 100px;
+ min-height: 100%;
+ padding-top: 100px;
+ box-sizing: border-box
  }
+
  
 .header_wrapper{
- position:relative;
+	 position:relative;
+	 width: 100%;
+	 border-bottom: none;
+	 height: 54px;
+	 margin: 0 auto;
  }
  
- .wrapper.member_login .header_wrapper {
+.wrapper_member_login .header_wrapper {
     width: 100%;
     border-bottom: none;
     height: 54px;

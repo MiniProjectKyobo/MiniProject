@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.footer_body{
+	padding: 40px 0 50px;
+	flex-direction: row;
+}
+.footer_inner{
+	display:flex;
+	margin:0 auto;
+	width:1200px;
+}
+.notice_wrap winner{
+	display:flex;
+}
+.logo_box{
+	display:flex;
+	align-items: flex-end;
+}
+
+.footer_contents_wrap{
+	display:flex;
+	margin-top: 28px;
+
+}
+
+.logo_box{
+	display: block;
+	width: 1200px;
+    height: 48px;
+}
+
+img{
+	width: 168px;
+	height: 48px;
+}
+
+.copyright{
+	margin-top: 23px;
+	line-height: 18px;
+	color: #767676;
+	font-size: 12px;
+}
+
+
