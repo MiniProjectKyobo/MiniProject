@@ -6,11 +6,10 @@ body{
 }
 
 
-.header_wrapper{
-	width:100%;
-}
 .header_inner{
-	margin:0 auto;
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .wrapper_member_login{
@@ -39,6 +38,7 @@ body{
 
 .logo_box{
 	display:inline-block;
+	margin:0 auto;
     width: 171px;
     height: 90px;
 }
