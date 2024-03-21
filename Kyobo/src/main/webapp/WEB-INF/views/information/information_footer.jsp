@@ -1,6 +1,3 @@
-<link href="<%=request.getContextPath()%>/resources/css/purchase_styles.css"
-	rel="stylesheet">
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
