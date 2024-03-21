@@ -45,7 +45,7 @@
             	</div>	
 
 <script>
-$("#formJoin08").on("blur", function(){
+$("#formJoin01").on("blur", function(){
 	var idLength = $(this).val().trim().length;
 	var id = $(this).val().trim();
 	var msg = '';
@@ -73,18 +73,20 @@ $("#formJoin08").on("blur", function(){
       				<div class="form_cont">
           				<div class="form_ip_pw">
             				<input type="password" class="form_ip" placeholder="비밀번호를 입력해 주세요." id="formJoin02" maxlength="15">
+            				<span class="valid_desc"></span>
             			</div>
             			
           				 <div class="pw_valid_wrap">
-            				<ul class="pw_valid_list">
-                				<li class="pw_valid_item">영문, 숫자, 특수문자 3가지 조합 8자리 이상 또는<br>2가지 조합 10자리 이상</li>
-                				<li class="pw_valid_item">공백 및 3자 이상의 연속 또는 중복 문자는 사용 불가</li>
-            				</ul>
+	            				<ul class="pw_valid_list">
+	                				<li class="pw_valid_item">영문, 숫자, 특수문자 3가지 조합 8자리 이상 또는<br>2가지 조합 10자리 이상</li>
+	                				<li class="pw_valid_item">공백 및 3자 이상의 연속 또는 중복 문자는 사용 불가</li>
+	            				</ul>
+	            			
         				</div>
       				</div>
     			</div>
 
-    
+
     
     			<div class="form_box">
         			<div class="form_title">
