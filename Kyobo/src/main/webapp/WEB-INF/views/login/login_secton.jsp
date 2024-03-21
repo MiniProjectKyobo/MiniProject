@@ -5,13 +5,15 @@
 				<div class="form_col_group valid_check">
 					<div class="col_box id">
 						<div class="awesomplete">
-						<input type="text" placeholder="아이디를 입력해주세요" class="form_ip">
+						<input type="text" placeholder="아이디를 입력해주세요" class="form_ip" id="id1">
+						<span class="valid_desc-id"></span>
 						</div>
 					</div>
 					
 					<div class="col_box pw">
 						<div class="form_ip_pw">
-						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip">
+						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip" id="pw1">
+						<span class="valid_desc-pw"></span>
 						</div>
 					</div>
 				</div>
@@ -42,7 +44,7 @@
 			
 			<div class="join_induce_wrap">
 				<div class="btn_wrap justify">
-				<a href="http://127.0.0.1:8080/kyobo/signup" class="btn_lg btn_line_primary">
+				<a href="http://127.0.0.1:8080/kyobo/signup" class="btn_lg">
 				<span class="text">회원가입</span>
 				</a>
 				</div>
@@ -55,3 +57,29 @@
 			<div class="adv_wrap">
 			</div>
 		</section>
+		
+<script>
+$("#id1").on("blur", function(){
+	var strleng=$(this).val().trim().length;
+	var id=$(this).val().trim();
+	var msg='';
+	if(strleng<1){
+		msg='아이디를 입력해주세요'
+	}else{
+		msg='';
+	}
+	$(".valid_desc-id").html(msg);
+});
+
+$("#pw1").on("blur", function(){
+	var strleng=$(this).val().trim().length;
+	var id=$(this).val().trim();
+	var msg='';
+	if(strleng<1){
+		msg='비밀번호를 입력해주세요'
+	}else{
+		msg='';
+	}
+	$(".valid_desc-pw").html(msg);
+});
+</script>
