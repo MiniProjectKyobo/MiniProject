@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body {
+	font-size: 14px;
+	line-height: 1.4;
+	font-family: "Roboto", "Noto Sans KR", "PingFang SC", "Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic", sans-serif;
+	min-width: 1440px;
+	color: #000;
+}
+
+h2 {
+	font-size: 27px;
+	margin-top : 5px;
+}
+
+div {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+.container-wrapper {
+	width: 1200px;
+	margin : 0 auto;
+	
+}
+
+.welcome_banner_wrap {
+/*     position: relative; */
+    padding-top: 60px;
+   	border: 1px solid black;
+}
+
+.welcome_banner_wrap > ul > li {
+	display: inline-block;
+	margin: 0;
+}
+
+
+.welcome_banner_wrap > ul > li > button {
+   
+	color: #767676;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+	border: none;
+}
+
+.contents_inner .welcome_marketing_list {
+	display: flex;
+
+}
+
+.welcome_marketing_list .item_1, .item_2, .item_3 {
+	margin-right: 30px;
+}
+
+.welcome_wrap > .contents_inner {
+    border: 1px solid black;
+  
+}
+
+
+.welcome_wrap > .welcome_main_content_area {
+	border: 1px solid black;
+}
+
+.contents_inner {
+	 display: flex;
+
+}
+
+.category_tag_list .category_item {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px; 
+}
+
+.contents_inner > ul > li > button {
+
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 700;
+   	color: #767676;
+    font-size: 15px;
+    border: none;
+
+}
