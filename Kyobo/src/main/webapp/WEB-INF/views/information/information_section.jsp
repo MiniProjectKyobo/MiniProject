@@ -41,56 +41,88 @@
      </aside>
 
 </div>
-    <div id="bottom_table">    
-        <section class="event">
+    <div id="bottom_table">
+    	<div class="events_div">
+    	<span id="events_title"><b>이 책의 이벤트</b></span>
+    	<section class="event">
             <div>
                 <img src="<%=request.getContextPath()%>/resources/images/events_1.jpg" class="event_image">
-                <div class="event_text"> 『고층 입원실의 갱스터 할머니』 교보문고 단독 사인회 </div>
-                <div class="event_date"> 2024/03/13 ~ 2024/03/23 </div>
+                <div class="big_text"> 『고층 입원실의 갱스터 할머니』 교보문고 단독 사인회 </div>
+                <div class="small_text"> 2024/03/13 ~ 2024/03/23 </div>
             </div>
             <div>
                 <img src="<%=request.getContextPath()%>/resources/images/events_2.jpg" class="event_image">
-                <div class="event_text"> 『고층 입원실의 갱스터 할머니』 교보문고 단독 사인회 </div>
-                <div class="event_date"> 2024/03/13 ~ 2024/03/23 </div>
+                <div class="big_text"> 『고층 입원실의 갱스터 할머니』 북콘서트 </div>
+                <div class="small_text"> 2024/03/13 ~ 2024/04/06 </div>
             </div>
             <div>
                 <img src="<%=request.getContextPath()%>/resources/images/events_3.jpg" class="event_image">
-                <div class="event_text"> 『고층 입원실의 갱스터 할머니』 교보문고 단독 사인회 </div>
-                <div class="event_date"> 2024/03/13 ~ 2024/03/23 </div>
+                <div class="big_text"> 『고층 입원실의 갱스터 할머니』 예판 특전 이벤트 </div>
+                <div class="small_text"> 2024/03/13 ~ 2024/04/13 </div>
             </div>
             <div>
                 <img src="<%=request.getContextPath()%>/resources/images/events_4.jpg" class="event_image">
-                <div class="event_text"> 『고층 입원실의 갱스터 할머니』 교보문고 단독 사인회 </div>
-                <div class="event_date"> 2024/03/13 ~ 2024/03/23</div>
+                <div class="big_text"> 봄을 알리는 에세이 with 최재천 교수 </div>
+                <div class="small_text"> 2024/03/13 ~ 2024/04/30 </div>
             </div>
             <div>
                 <img src="<%=request.getContextPath()%>/resources/images/events_5.jpg" class="event_image">
-                <div class="event_text"> 『고층 입원실의 갱스터 할머니』 교보문고 단독 사인회 </div>
-                <div class="event_date"> 2024/03/13 ~ 2024/03/23</div>
+                <div class="big_text"> MD가 골라드림②3월이니까 3부작 </div>
+                <div class="small_text"> 2024/03/04 ~ 2024/04/14 </div>
             </div>
         </section>
+        
+        <img src="<%=request.getContextPath()%>/resources/images/book_information_1.jpeg" class="book_info_image">
+        
+    	</div>    
+        
 
         <aside class="bestsellers">
-            <div>
+        	<span id="bestsellers_title">
+        	<b>이 분야의 베스트 </b>
+        	</span>
+            <div class="bestsellers_box">
                 <img src="<%=request.getContextPath()%>/resources/images/bestseller_1.jpg" class="bestseller_image">
+                <div class="bestsellers_textbox">
+                	<span class="bestsellers_title_text"> 고층 입원실의 갱스터 할머니 </span> 
+               		<span class="bestsellers_name_text"> 양유진 </span>
+                	<span class="bestsellers_cost_text"><span style="color:#4dac27">10%</span> <b>16,920</b> 원 </span>
+                </div>
             </div>
-            <div>
+            <div class="bestsellers_box">
                 <img src="<%=request.getContextPath()%>/resources/images/bestseller_2.jpg" class="bestseller_image">
+                <div class="bestsellers_textbox">
+                	<span class="bestsellers_title_text"> 나는 메트로폴리탄 미술관의 경비원입니다 </span> 
+               		<span class="bestsellers_name_text"> 패트릭 브링리 </span>
+                	<span class="bestsellers_cost_text"><span style="color:#4dac27">10%</span> <b>15,750</b> 원 </span>
+                </div>
             </div>
-            <div>
+            <div class="bestsellers_box">
                 <img src="<%=request.getContextPath()%>/resources/images/bestseller_3.jpg" class="bestseller_image">
-            </div>
-            <div>
+                <div class="bestsellers_textbox">
+                	<span class="bestsellers_title_text"> 찌그러져도 동그라미입니다 </span> 
+               		<span class="bestsellers_name_text"> 김창완 </span>
+                	<span class="bestsellers_cost_text"><span style="color:#4dac27">10%</span> <b>16,020</b> 원 </span>
+                </div>
+            </div>            
+            <div class="bestsellers_box">
                 <img src="<%=request.getContextPath()%>/resources/images/bestseller_4.jpg" class="bestseller_image">
-            </div>
-            <div>
+                <div class="bestsellers_textbox">
+                	<span class="bestsellers_title_text"> 삶을 견디는 기쁨 </span> 
+               		<span class="bestsellers_name_text"> 헤르만 헤세 </span>
+                	<span class="bestsellers_cost_text"><span style="color:#4dac27">10%</span> <b>15,120</b> 원 </span>
+                </div>
+            </div>            
+            <div class="bestsellers_box">
                 <img src="<%=request.getContextPath()%>/resources/images/bestseller_5.jpg" class="bestseller_image">
+                <div class="bestsellers_textbox">
+                	<span class="bestsellers_title_text">당신은 결국 무엇이든 해내는 사람(10만 부 기념 특별 리커버 에디션) </span> 
+               		<span class="bestsellers_name_text"> 김상현 </span>
+                	<span class="bestsellers_cost_text"><span style="color:#4dac27">10%</span> <b>15,300</b> 원 </span>
+                </div>
             </div>
         </aside>
     </div>
 
-<footer>
-    <img src="<%=request.getContextPath()%>/resources/images/book_information_1.jpeg" class="book_info_image">
-</footer>
 
 
