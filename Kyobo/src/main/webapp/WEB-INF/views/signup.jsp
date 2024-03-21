@@ -14,7 +14,7 @@
 
 </head>
 <body>
-	<div class="wrapper member_login id=mainDiv">
+	<div class="wrapper member_login" id="mainDiv">
 		<header class="header_wrapper">
 			<%@include file="/WEB-INF/views/signup/signup_header.jsp"%>
 		</header>
