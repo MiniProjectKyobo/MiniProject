@@ -74,17 +74,35 @@
 						<!-- 책 리스트 -->
 						<ul>
 							<li class="prod_item">
-								<div class="prod_chk_group">
+								<button class="prod_chk_group">
 									<span class="material-icons"> check_circle_outline </span>
+								</button>
+								<div class="prod_area">
+									<div>
+										<img data-kbbfn="s3-image" alt="고층 입원실의 갱스터 할머니"
+											src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
+											data-src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg">
+										<div>새창보기</div>
+										<div>미리보기</div>
+									</div>
+									<div class="prod_info_box">
+									<div>번호</div>
+									<div>태그 박스</div>
+									<div>책이름</div>
+									<div>작가 출판사 날짜</div>
+									<div>할인 가격 페이지</div>
+									<div>책소개</div>
+									<div>리뷰</div>
+									</div>
 								</div>
-								<div class="prod_area">이미지</div>
 								<div class="prod_order_state">배송 날짜</div>
 								<div class="prod_btn_wrap">
-									<div class="btn_wish_icon ">
+									<button type="button" class="btn_wish_icon ">
 										<span class="material-icons"> favorite_border </span>
-									</div>
+									</button>
+
 									<div>
-										<div>장바구니</div>
+										    <a href="#" title="장바구니" class="button btnFade btnBlueGreen">장바구니</a>
 										<div>바로구매</div>
 									</div>
 								</div>
