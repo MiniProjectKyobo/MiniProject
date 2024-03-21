@@ -5,14 +5,14 @@
 				<div class="form_col_group valid_check">
 					<div class="col_box id">
 						<div class="awesomplete">
-						<input type="text" placeholder="아이디를 입력해주세요" class="form_ip" id="id1">
+						<input type="text" placeholder="아이디를 입력해주세요" class="form_ip" id="id1" >
 						<span class="valid_desc-id"></span>
 						</div>
 					</div>
 					
 					<div class="col_box pw">
 						<div class="form_ip_pw">
-						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip" id="pw1">
+						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip" id="pw1" >
 						<span class="valid_desc-pw"></span>
 						</div>
 					</div>
@@ -27,7 +27,7 @@
 			</div>
 			
 			<div class="btn_wrap justify">
-				<button class="btn_lg purple" id="loginBtn"  disabled value='nobt'>
+				<button class="btn_lg purple" id="loginBtn" >
 					<span class="text">로그인</span>
 				</button>
 			</div>
@@ -83,4 +83,19 @@ $("#pw1").on("blur", function(){
 	$(".valid_desc-pw").html(msg);
 });
 </script>
+
+<!-- <script>
+$('.form_ip').on("oninput",function(){
+	var strid=$("#id1").val().trim().length;
+	var strpw=$("#pw1").val().trim().length;
+	if(strid&&strpw>1){
+		document.getElementsByClassName("button.purple");
+	}else{
+		document.getElementsByClassName("button.btn_lg");
+	}
+	});
+
+console.log("#id1".length);
+</script> 
+ -->
 
