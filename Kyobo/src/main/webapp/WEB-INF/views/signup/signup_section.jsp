@@ -355,7 +355,7 @@ $(document).ready(function(){
         	<ul class="chk_col_list">
             	<li class="chk_col_item">
     				<span class="form_chk">
-        				<input type="checkbox" id="personal" name="check3">
+        				<input type="checkbox" id="personal" name="check4">
         				<label for="personal">
             				개인정보 수집 및 이용 동의 
             				<span class="desc_gray">(선택)</span>
@@ -369,11 +369,41 @@ $(document).ready(function(){
         				</button>
     				</div>
 				 </li>
+ 
+ <script>
+ $(document).ready(function(){
+	$("#kyoboLifePlanet").click(function(){
+		if($("#kyoboLifePlanet").prop("checked")){
+			$("input[name='check3']").removeAttr("readonly");
+		} else {
+			$("input[name='check3']").prop("readonly", true);
+		}
+	});
+	 
+ });
+	 
+ 
+/*   $(document).ready(function(){
+		$("#kyoboLifePlanet").on("click", function(){
+			if($("#kyoboLifePlanet").prop("checked")) {
+				$("input[name='check3']").removeAttr("readonly");
+			}else {
+				$("input[name='check3']").prop("readonly", true);
+			}
+		
+		});
+		});
+
+ 
+  */
+
+ 
+ </script>
             
             	 <li class="chk_col_item">
                 	<div class="marketing_agree_area">
                     	<span class="form_chk">
-                        	<input  type="checkbox" id="kyoboLifePlanet" name="check3">
+                        	<input  type="checkbox" id="kyoboLifePlanet">
                         	<label for="kyoboLifePlanet">
                             	교보라이프플래닛 제3자 정보제공 동의 
                             	<span class="desc_gray">(선택)</span>
@@ -392,7 +422,7 @@ $(document).ready(function(){
                         	<ul class="chk_row_list">
                             	<li class="chk_row_item type_all">
                                 	<span class="form_chk">
-	                                    <input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="">
+	                                    <input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="readonly">
                                     	<label for="termsMarketingChk2" class="fc_gray">
                                     		마케팅 수신 동의 
                                     		<span class="desc_gray">(선택)</span>
@@ -401,13 +431,13 @@ $(document).ready(function(){
                             	</li>
                             	<li class="chk_row_item">
                                 	<span class="form_chk">
+	                                    <input id="termsMarketingChk201" type="checkbox" name="check3" readonly="readonly">
                                     	<label for="termsMarketingChk201" class="fc_gray">SMS</label>
-	                                    	<input id="termsMarketingChk201" type="checkbox" name="check3" readonly="">
                                 	</span>
                             	</li>
                             	<li class="chk_row_item fc_">
                                 	<span class="form_chk">
-	                                    <input type="checkbox" id="termsMarketingChk202" name="check3" readonly="" >
+	                                    <input type="checkbox" id="termsMarketingChk202" name="check3" readonly="readonly" >
                                     	<label for="termsMarketingChk202" class="fc_gray">이메일</label>
                                 	</span>
                             	</li>
