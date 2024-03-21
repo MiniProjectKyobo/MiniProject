@@ -34,7 +34,7 @@
 			
 			<div class="save_id_box"> 
 				<span class="form_chk">
-					<input id="formSaveId" type="checkbox">
+					<input id="formSaveId" type="checkbox" checked>
 					<label for="formSaveId">
 					아이디저장
 					</label>
@@ -82,4 +82,24 @@ $("#pw1").on("blur", function(){
 	}
 	$(".valid_desc-pw").html(msg);
 });
+</script>
+
+<script>
+<script>
+/* 좋아요 버튼 활성화 */
+$(document).ready(btn_lg_purple);
+$("button.btn_lg").on("click", btn_lg_purple);
+function btn_lg_purple() {
+	/* console.log($(this)); */
+	if ($(this).hasClass("btn_lg_purple") {
+		$(this).removeClass("btn_lg");
+		$("#loginBtn").css("display", "block");
+		$("#btn_lg_purple").css("display", "none");
+
+	} else {
+		$(this).addClass("btn_lg");
+		$("#btn_lg_purple").css("display", "none");
+		$("#loginBtn").css("display", "block");
+	}
+}
 </script>
