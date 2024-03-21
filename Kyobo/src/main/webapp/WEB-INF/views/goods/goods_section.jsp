@@ -79,17 +79,15 @@
 									<span class="material-icons"> check_circle_outline </span>
 								</button>
 								<div class="prod_area">
-									<div class="prod_thumb_box.size_lg ">
-										<a>
-											<div>
-												<img data-kbbfn="s3-image" alt="고층 입원실의 갱스터 할머니"
-													src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
-													data-src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg">
-											</div>
+									<div class="prod_thumb_box ">
+										<a> <span> <img data-kbbfn="s3-image"
+												loading="lazy" alt="고층 입원실의 갱스터 할머니"
+												src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
+												data-src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg">
+										</span>
 										</a>
 										<div class="prod_viewer_control">
-											<div>새창보기</div>
-											<div>미리보기</div>
+											<span>새창보기</span> <span>미리보기</span>
 										</div>
 
 									</div>
@@ -151,10 +149,11 @@
 	</section>
 </section>
 <script>
+	/* 좋아요 버튼 활성화 */
 	$(document).ready(getlike);
 	$("button.btn_wish_icon").on("click", getlike);
 	function getlike() {
-		console.log($(this));
+		/* console.log($(this)); */
 		if ($(this).hasClass("unlike")) {
 			$(this).removeClass("unlike");
 			$("#like").css("display", "block");

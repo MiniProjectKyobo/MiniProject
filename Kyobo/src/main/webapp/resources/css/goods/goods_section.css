@@ -155,13 +155,21 @@ section .title_tab {
 .contents_wrap .prod_item>.prod_area {
 	display: flex;
 	flex: 0 1 auto;
+	height:245px;
 	align-items: flex-start;
 	flex-wrap: nowrap;
 	max-width: 674px;
 }
 
-.contents_wrap .prod_item>.prod_area .prod_thumb_box.size_lg {
+.contents_wrap .prod_item>.prod_area .prod_thumb_box  {
 	width: 142px;
+	height :100%
+	
+}
+
+.contents_wrap .prod_item>.prod_area > a {
+	display: block;
+	height: 100%;
 }
 
 .contents_wrap .prod_item>.prod_area img {
@@ -193,9 +201,7 @@ section .title_tab {
 	margin-bottom: 24px;
 	width: 18px;
 	height: 18px;
-
 }
-
 
 .contents_wrap .prod_item>.prod_btn_wrap>.btn_wish_icon a.button {
 	display: block;
