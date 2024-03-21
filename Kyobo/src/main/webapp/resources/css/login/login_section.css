@@ -112,5 +112,9 @@ a.btn_text_link{
 .valid_desc-pw{
 	color:red;
 } 
-
+.purple{
+	color: #fff;
+    background: #5055b1;
+    border: 1px solid #5055b1;
+}
 

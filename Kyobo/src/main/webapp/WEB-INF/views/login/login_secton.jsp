@@ -27,7 +27,7 @@
 			</div>
 			
 			<div class="btn_wrap justify">
-				<button class="btn_lg" id="loginBtn">
+				<button class="btn_lg purple" id="loginBtn"  disabled value='nobt'>
 					<span class="text">로그인</span>
 				</button>
 			</div>
@@ -84,22 +84,3 @@ $("#pw1").on("blur", function(){
 });
 </script>
 
-<script>
-<script>
-/* 좋아요 버튼 활성화 */
-$(document).ready(btn_lg_purple);
-$("button.btn_lg").on("click", btn_lg_purple);
-function btn_lg_purple() {
-	/* console.log($(this)); */
-	if ($(this).hasClass("btn_lg_purple") {
-		$(this).removeClass("btn_lg");
-		$("#loginBtn").css("display", "block");
-		$("#btn_lg_purple").css("display", "none");
-
-	} else {
-		$(this).addClass("btn_lg");
-		$("#btn_lg_purple").css("display", "none");
-		$("#loginBtn").css("display", "block");
-	}
-}
-</script>
