@@ -1,91 +1,86 @@
 @charset "UTF-8";
 
+.container_wrapper
+{
+padding: 50px 0 100px;
+min-height: calc(100vh - 54px - 68px - 250px);
+}
+
+.contents_wrap_login{
+		margin: 0 auto;
+		width: 400px;
+}
+
 .awesomplete{
 	display:relative;
 }
-
 .form_ip{
 	width: 100%;
-    height: 44px;
-    border: 1px solid #d5d5d5;
-    box-sizing: border-box;
-    border-radius: 6px;
+   height: 44px;
+   border: 1px solid #d5d5d5;
+   box-sizing: border-box;
+   border-radius: 6px;
 }
-
 .btn_wrap justify {
 	display:flex;
 	min-width: auto;
 }
-
 #loginBtn {
 	color: #fff;
 	border: 1px solid #767676;
 	background: #bebebe;
-    border-color: #bebebe;
+   border-color: #bebebe;
 }
-
 button.btn_lg {
 	height: 50px;
-    padding: 0 23px 1px;
-    border-radius: 6px;
+   padding: 0 23px 1px;
+   border-radius: 6px;
 }
-
 .text {
 	display: inline-block;
-    position: relative;
-    vertical-align: top;
+   position: relative;
+ 
 }
-
 .save_id_box{
 	display:flex;
 	margin-top: 10px;
 	justify-content:space-between;
 }
-
- .form_chk {
- 	min-height: 22px;
- }
- .form_chk input{
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    border: 0;
-    border-radius: 0;
-    background: none;
-} 
-
-
+.form_chk {
+	min-height: 22px;
+}
+.form_chk input{
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   border: 0;
+   border-radius: 0;
+   background: none;
+}
 input[type="checkbox"]{
 	box-sizing: border-box;
 }
-
-
 .form_chk input + label {
-    display: inline-block;
-    position: relative;
-    padding: 2px 0 0 27px;
-    font-size: 14px;
-    letter-spacing: -0.01em;
-    line-height: 20px;
-    color: #000;
-    cursor: pointer;
+   display: inline-block;
+   position: relative;
+   padding: 2px 0 0 27px;
+   font-size: 14px;
+   letter-spacing: -0.01em;
+   line-height: 20px;
+   color: #000;
+   cursor: pointer;
 }
 a.btn_text_link{
 	color: #767676;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-    text-align: left;
-    display: inline-block;
-    box-sizing: border-box;
+   font-size: 14px;
+   line-height: 22px;
+   font-weight: 400;
+   text-align: left;
+   display: inline-block;
+   box-sizing: border-box;
 }
-
-.btn_wrap justify{
-	display:flex;
-}
-
 a.btn_lg btn_line_primary{
 	border:1px solid #5055b1;
 	color: #474c98;
@@ -93,3 +88,5 @@ a.btn_lg btn_line_primary{
 	min-width: auto;
 	
 }
+
+

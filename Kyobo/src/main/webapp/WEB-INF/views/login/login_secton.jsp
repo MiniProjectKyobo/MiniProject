@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<section class="contents_wrap login">
+<section class="contents_wrap_login">
 			<div class="login_form_wrap">
 				<div class="form_col_group valid_check">
 					<div class="col_box id">
@@ -11,7 +11,7 @@
 					
 					<div class="col_box pw">
 						<div class="form_ip_pw">
-						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip" >
+						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip">
 						</div>
 					</div>
 				</div>
@@ -25,7 +25,7 @@
 			</div>
 			
 			<div class="btn_wrap justify">
-				<button class="btn_lg btn_light_gray" id="loginBtn"  >
+				<button class="btn_lg btn_light_gray" id="loginBtn">
 					<span class="text">로그인</span>
 				</button>
 			</div>
