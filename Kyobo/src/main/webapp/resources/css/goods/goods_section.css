@@ -151,29 +151,38 @@ section .title_tab {
 .contents_wrap .prod_item>.prod_chk_group {
 	margin-right: 10px;
 }
+
+.contents_wrap .prod_item>.prod_chk_group:hover {
+	cursor: pointer;
+}
 /* 책 이미지 및 정보 */
 .contents_wrap .prod_item>.prod_area {
 	display: flex;
 	flex: 0 1 auto;
-	height:245px;
+	height: 245px;
 	align-items: flex-start;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	max-width: 674px;
+	align-items: flex-start;
 }
 
-.contents_wrap .prod_item>.prod_area .prod_thumb_box  {
+.contents_wrap .prod_item>.prod_area .prod_thumb_box {
+	display: flex;
+	flex-direction: column;
+	display: inline-block;
+	height: 200px;
 	width: 142px;
-	height :100%
-	
 }
 
-.contents_wrap .prod_item>.prod_area > a {
-	display: block;
+.contents_wrap .prod_item>.prod_area>.prod_thumb_box>a {
+	display: inline-block;
 	height: 100%;
+	width: 100%;
 }
 
-.contents_wrap .prod_item>.prod_area img {
-	max-height: calc(( 142px - 2px)* 1.618- 10px);
+.contents_wrap .prod_item>.prod_area>.prod_thumb_box .img_size {
+	height: 100%;
+	width: 100%;
 }
 
 .contents_wrap .prod_item>.prod_area .prod_viewer_control {
@@ -181,11 +190,60 @@ section .title_tab {
 	font-size: 0;
 	text-align: center;
 }
+/* 책 상세 정보 */
+.contents_wrap .prod_info_box {
+	margin-left: 16px;
+	padding-top: 10px;
+	max-width: 516px;
+}
+
+.contents_wrap .tagbox {
+	display: flex;
+	flex-direction: row;
+}
+
+.contents_wrap .tagbox>ul>li {
+	display: inline-block;
+	padding: 2px;
+	margin: 0 1px;
+	border: 1px solid gray;
+	color: gray;
+	border-radius: 3px;
+}
+
+.contents_wrap .auto_overflow_contents {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 23px;
+	letter-spacing: -0.01em;
+	font-weight: 500;
+}
+
+.contents_wrap .prod_introduction {
+	overflow: hidden;
+	max-width: 100%;
+	margin-top: 20px;
+}
 /* 주문안내 */
+.contents_wrap .prod_item {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+}
+
 .contents_wrap .prod_item>.prod_order_state {
 	text-align: center;
 	margin: 48px 0 35px 0;
-	width: 100px;
+	width: 120px;
+	/* flex-shrink: 0;  필요시 추가*/
+}
+
+.contents_wrap .prod_item>.prod_order_state>.deliver {
+	padding: 3px ;
+	color: #474c98;
+	background-color: #CCCCFF;
+	border-radius: 8px;
 	/* flex-shrink: 0;  필요시 추가*/
 }
 /* 구매칸 */
@@ -194,6 +252,7 @@ section .title_tab {
 	width: 135px;
 	margin-left: auto;
 	text-align: right;
+	padding: 10px;
 }
 
 .contents_wrap .prod_item>.prod_btn_wrap>.btn_wish_icon {
