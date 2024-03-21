@@ -81,7 +81,7 @@
 								</button>
 								<div class="prod_area">
 									<div class="prod_thumb_box ">
-										<a class="proid_link"> <img data-kbbfn="s3-image"
+										<a href="http://127.0.0.1:8080/kyobo/information" class="proid_link"> <img data-kbbfn="s3-image"
 											loading="lazy" alt="고층 입원실의 갱스터 할머니"
 											src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
 											data-src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
