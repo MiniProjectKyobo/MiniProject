@@ -56,6 +56,10 @@ button.btn_lg {
 	min-width: auto;
 }
 
+.btn_lg:hover{
+	background-color:rgb(216, 213, 213);
+}
+
 .text {
 	display: inline-block;
    position: relative;
@@ -101,8 +105,12 @@ a.btn_text_link{
    display: inline-block;
    box-sizing: border-box;
 }
-a.btn_lg btn_line_primary{
-	
+
+.valid_desc-id  {
+	color:red;
 }
+.valid_desc-pw{
+	color:red;
+} 
 
 
