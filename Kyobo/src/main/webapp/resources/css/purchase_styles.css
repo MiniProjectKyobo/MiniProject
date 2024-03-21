@@ -44,23 +44,27 @@ body{
 #bottom_table {
     display: flex;
     justify-content: center;
-    height: 800px;
+    height: 3000px;
+    border-top: 1px solid lightgray;
+
 }
 
 .event {
     display: flex;
     flex-wrap: wrap;
     width: 840px;
-    height: 400px;
+    height: 700px;
     margin: 20px;
     grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
     
 }
 
-.event>* {
+.event>div {
     margin: 15px;
     flex: 0 1 250px;
   }
+  
+ 
 
 .bestsellers {
     display: flex;
@@ -68,15 +72,35 @@ body{
     width: 300px;
     height: 850px;
     margin: 20px;
-
-
+    margin-left: 0;
 }
 
-.bestsellers>* {
+.events_div {
+	display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.bestsellers> div {
     margin: 15px;
     flex: 0 1 100px;
 
   }
+  
+#bestsellers_title {
+	margin-left: 15px;
+	font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+}
+
+#events_title {
+	position: relative;
+	margin-left: 30px;	
+	font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+}
 
 .product_footer {
     position: fixed;
@@ -84,25 +108,23 @@ body{
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 300;
     background-color: whitesmoke;
     border-top: 1px solid lightgray;
-    min-width: 1000px;
 }
 
 .product_details {
+	margin: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-
+    width: 1200px;
 }
-
 .left {
     padding: 24px;
 }
 
 .right {
     padding: 8px;
-    justify-content: flex-end;
 }
 
 .product_details > .left > #price {
@@ -111,7 +133,6 @@ body{
 
 .product_details > .left > #pricelabel {
     font-size: 18px;
-    margin-left: 75px;
     padding-right: 30px;
 }
 
@@ -135,6 +156,9 @@ body{
     display: flex;
     justify-content: center;
     height: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
   }
 
   #main > nav {
@@ -159,7 +183,6 @@ body{
     display: inline-block;
     font-size: 24px;
     border-radius: 8px;
-    margin-right: 75px;
 
 }
 
@@ -179,7 +202,6 @@ body{
     display: inline-block;
     font-size: 24px;
     border-radius: 8px;
-    margin-right: 75px;
 
 }
 
@@ -194,6 +216,10 @@ body{
     padding-bottom: 50px;
     object-fit: contain;
     }
+    
+.bestsellers_box {
+	display: flex;
+}
 
 .event_image {
     display: block;
@@ -209,7 +235,7 @@ body{
     border-radius: 8px;
 }
 
-.event_text {
+.big_text {
     color: black;
     font-size: 15px;
     line-height: 23px;
@@ -218,7 +244,7 @@ body{
     padding: 10px;
 }
 
-.event_date {
+.small_text {
     display: block;
     color: #595959;
     font-size: 12px;
@@ -234,6 +260,35 @@ padding: 25px;
 
 }
 
+.bestsellers_textbox {
+	margin-left: 10px;
+	
+}
 
-  
-  
+
+.bestsellers_title_text {
+    color: black;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+    font-weight: 550;
+
+    
+}
+
+.bestsellers_name_text {
+    display: block;
+    color: #595959;
+    font-size: 12px;
+    line-height: 18px;
+}
+ 
+.bestsellers_cost_text {
+	font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+}
+
+hr {
+	display: block;
+}
