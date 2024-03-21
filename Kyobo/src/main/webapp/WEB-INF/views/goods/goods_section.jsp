@@ -75,10 +75,9 @@
 						<!-- 책 리스트 -->
 						<ul>
 							<li class="prod_item">
-
 								<button class="prod_chk_group cart_check">
-									<div class="material-icons uncheck">check_circle_outline</div>
-									<div class="material-icons check">check_circle</div>
+									<div id="uncheck" class="material-icons ">check_circle_outline</div>
+									<div id="check" class="material-icons ">check_circle</div>
 								</button>
 								<div class="prod_area">
 									<div class="prod_thumb_box ">
@@ -109,7 +108,7 @@
 										</div>
 										<div class="auto_overflow_contents">고층 입원실의 갱스터 할머니</div>
 										<div>양유진 21세김북스 2024.03.20</div>
-										<div>10% 22,500원  \ 1,256p</div>
+										<div>10% 22,500원 \ 1,256p</div>
 										<p class="prod_introduction">누군가의 오랜 아픔을 마주하는 일이 이토록 환하고
 											유쾌할 수 있을까? 마냥 해맑게 자랐을 것만 같았던 크리에이터 ‘빵먹다살찐떡’ 양유진의 첫 투병 고백
 											이야기다. 틱톡과 유튜브 채널 ‘빵먹다살찐떡’으로 수많은 이들에게 다정한 웃음을 선사한 저자는 이 책을 통해
@@ -131,7 +130,9 @@
 								</div>
 								<div class="prod_order_state">
 									<div class="deliver">새벽배송</div>
-									<div><strong>내일(3/27,수,오전 7시 전 도착)</strong></div>
+									<div>
+										<strong>내일(3/27,수,오전 7시 전 도착)</strong>
+									</div>
 								</div>
 								<div class="prod_btn_wrap">
 
@@ -143,12 +144,13 @@
 									</button>
 
 									<div>
-										<a href="http://127.0.0.1:8080/kyobo/cart" title="장바구니"
-											class="button btnFade btnBlueGreen">장바구니</a>
-										<div>바로구매</div>
+										<a class="btn btn-primary"
+											href="http://127.0.0.1:8080/kyobo/cart" role="button">장바구니</a>
+										<a class="btn btn-primary"
+											href="http://127.0.0.1:8080/kyobo/cart" role="button">바로구매</a>
+
 									</div>
-								</div>
-							</li>
+								</div></li>
 							<li class="prod_item">광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는
 								자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다. 모든 국민은 능력에
 								따라 균등하게 교육을 받을 권리를 가진다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다. 이 헌법에
@@ -184,7 +186,6 @@
 <script>
 	/* 좋아요 버튼 활성화 */
 	$(document).ready(linkHandler);
-	$(document).ready(checkHandler);
 	$("button.btn_wish_icon").on("click", linkHandler);
 	function linkHandler() {
 		/* console.log($(this)); */
@@ -199,17 +200,18 @@
 			$("#unlike").css("display", "block");
 		}
 	}
+	/* 체크박스  */
+	$(document).ready(checkHandler);
 	$("button.prod_chk_group").on("click", checkHandler);
 	function checkHandler() {
 		if ($(this).hasClass("cart_check")) {
 			$(this).removeClass("cart_check");
-			$(".uncheck").css("display", "block");
-			$(".check").css("display", "none");
-
+			$("#uncheck").css("display", "block");
+			$("#check").css("display", "none");
 		} else {
 			$(this).addClass("cart_check");
-			$(".check").css("display", "none");
-			$(".uncheck").css("display", "block");
+			$("#check").css("display", "none");
+			$("#uncheck").css("display", "block");
 		}
 	}
 </script>

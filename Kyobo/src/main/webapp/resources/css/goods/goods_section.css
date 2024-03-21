@@ -277,6 +277,3 @@ section .title_tab {
 	transition: all 0.2s;
 }
 
-.contents_wrap .prod_item>.prod_btn_wrap>.btn_wish_icon a.btnBlueGreen {
-	background: #00AE68;
-}
