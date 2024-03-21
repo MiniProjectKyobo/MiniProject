@@ -1,54 +1,56 @@
-.contents_inner .cart_body_inner{
-	width:890px;
+.contents_inner .cart_body_inner {
+	width: 890px;
 }
-.contents_inner .cart_body{
+
+.contents_inner .cart_body {
 	position: relative;
 }
-.contents_inner .cart_info_wrap{
+
+.contents_inner .cart_info_wrap {
 	position: absolute;
 	right: 0;
 	top: 0;
 	width: 273px;
 }
-/* 
-.contents_wrap .wrapper .contents_cart{
-	padding-top: 50px;
-	margin: 0;
-	
-}
-.contents_wrap .header_wrapper{
-	width:"100%";
-		margin: 0;
-		padding: 0;
-	border: 0;
-}
-.contents_wrap .container_wrapper{
-	width: 1200px;
-	margin : 0 auto;
-	
-}
-.contents_wrap .cart_body{
-	font-size: 14px;
-	
-	
-}
-.contents_wrap .footer_wrapper{
-	
-}
-.contents_wrap .contents_inner {
-	 display: flex;
 
-}
-.contents_wrap .div {
-	display: block;
-	font-size: 14px;
+.contents_inner .cart_top_wrap .cart_title_box{
+	display: flex;
+	justify-content: flex-end;
 	
 }
-
-.contents_wrap .ul {
+.contents_inner .cart_top_wrap .cart_title_box ol{
+	display: flex;
+}
+.contents_inner .cart_top_wrap .util_btn_box{
+	display: flex;
+}
+/* .contents_inner .ol {
+	font-size: 0;
+	margin: 0; padding : 0; display : block; margin-block-start : 1em;
+	margin-block-end : 1em; margin-inline-start : 0px; margin-inline-end :
+	0px; padding-inline-start : 40px; list-style : none;
 	list-style: none;
+	padding-inline-start: 40px;
+	margin-inline-end: 0px;
+	margin-inline-start: 0px;
+	margin-block-end: 1em;
+	margin-block-start: 1em;
+	padding: 0;
+	display: block;
+	font-family: "Roboto", "Noto Sans KR", "PingFang SC",
+		"Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic",
+		sans-serif ";
 }
-.contents_wrap .h2 {
-	font-size: 27px;
-	margin-top : 5px;
+
+.contents_inner .ol .li .step_item {
+	margin-left: 16px;
+	display: inline-block;
+    color: #767676;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    line-height: 20px;
+    font-family: "Roboto", "Noto Sans KR", "PingFang SC",
+		"Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic",
+		sans-serif ";
 } */
+
