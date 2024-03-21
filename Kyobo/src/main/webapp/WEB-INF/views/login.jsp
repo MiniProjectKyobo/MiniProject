@@ -10,8 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <title>login</title>
-
-
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
 <div class="wrapper_member_login" id="mainDiv">
