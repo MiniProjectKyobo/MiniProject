@@ -3,12 +3,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+       $(function() {
+
+        var $sticky = $('header.sticky');
+
+        $(window).scroll(function() {
+
+       if($(document).scrollTop() > 150){
+           $sticky.show();
+       }
+       else  {
+           $sticky.hide();
+       }
+});
+});
+</script>
 
 
-    <title>Document</title>
 </head>
+
 <body>
-    <header>
+    <header id="header_big">
         <div class="nav_box">
             <nav class="nav_bar">
                 <a href="#">회원가입</a>
@@ -59,4 +76,21 @@
 
     </header>
    
-</body>
+    <header id="header_small" class="sticky" style="display:none;">
+       <div class="header_box">
+           <div class="header_left">
+               <a href="#"><img src="<%=request.getContextPath()%>/resources/images/img_logo_kyobo@2x.png" id="logo_icon"></a>
+
+
+               <div class="search_box">
+                   <input class="search" type="text">
+                   <a href="#"><img src="<%=request.getContextPath()%>/resources/images/search_icon.png" id="search_icon"></a>
+               </div>
+           </div>
+
+           <div class="header_right">
+               <a href="#"><img src="<%=request.getContextPath()%>/resources/images/cart.png" id="cart_icon"></a>
+               <a href="#"><img src="<%=request.getContextPath()%>/resources/images/profile.png" id="profile_icon"></a>
+           </div>
+       </div>
+   </header>

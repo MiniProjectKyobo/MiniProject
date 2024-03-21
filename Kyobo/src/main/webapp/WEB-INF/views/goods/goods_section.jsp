@@ -75,43 +75,76 @@
 						<!-- 책 리스트 -->
 						<ul>
 							<li class="prod_item">
-								<button class="prod_chk_group">
-									<span class="material-icons"> check_circle_outline </span>
+
+								<button class="prod_chk_group cart_check">
+									<div class="material-icons uncheck">check_circle_outline</div>
+									<div class="material-icons check">check_circle</div>
 								</button>
 								<div class="prod_area">
 									<div class="prod_thumb_box ">
-										<a> <span> <img data-kbbfn="s3-image"
-												loading="lazy" alt="고층 입원실의 갱스터 할머니"
-												src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
-												data-src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg">
-										</span>
+										<a class="proid_link"> <img data-kbbfn="s3-image"
+											loading="lazy" alt="고층 입원실의 갱스터 할머니"
+											src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
+											data-src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
+											class="img_size">
+
 										</a>
 										<div class="prod_viewer_control">
-											<span>새창보기</span> <span>미리보기</span>
+											<div>새창보기</div>
+											<div>미리보기</div>
 										</div>
 
 									</div>
 									<div class="prod_info_box">
-										<div>번호</div>
-										<div>태그 박스</div>
-										<div>책이름</div>
-										<div>작가 출판사 날짜</div>
-										<div>할인 가격 페이지</div>
-										<div>책소개</div>
+										<div class="material-icons">event</div>
+
+										<div class="tagbox">
+											<ul>
+												<li>MD의 선택</li>
+												<li>이벤트</li>
+												<li>사은품</li>
+												<li>소득공제</li>
+											</ul>
+
+										</div>
+										<div class="auto_overflow_contents">고층 입원실의 갱스터 할머니</div>
+										<div>양유진 21세김북스 2024.03.20</div>
+										<div>10% 22,500원  \ 1,256p</div>
+										<p class="prod_introduction">누군가의 오랜 아픔을 마주하는 일이 이토록 환하고
+											유쾌할 수 있을까? 마냥 해맑게 자랐을 것만 같았던 크리에이터 ‘빵먹다살찐떡’ 양유진의 첫 투병 고백
+											이야기다. 틱톡과 유튜브 채널 ‘빵먹다살찐떡’으로 수많은 이들에게 다정한 웃음을 선사한 저자는 이 책을 통해
+											지금까지 마음속에 꼭꼭 숨겨두었던, 난치병 ‘루푸스’(만성 자가면역 질환) 투병을 고백한다. 작은 방에서 홀로
+											찍었던 영상이 많은 이들에게 닿아 100만이 넘는 구독자를 모으기까지 괜스레 이야기하지 못했던 지난날의 아픔을
+											책에 조심스럽게 담아냈다. 10년 동안 난치병 환자로 살아오며 생사의 갈림길마다 자신을 일으켜 세운 사람들의
+											털털하고도 다정한 사랑이 저자가 이 책을 쓰게 한 동기다. 남모를 아픔으로 남들과 조금은 다른 길을 가야 했던
+											어린 날, 삶의 곳곳에서 나타나 삶의 방향과 태도를 가르쳐준 사람들을 위해, 또 자신이 받은 응원을 누군가에게
+											다시 돌려주기 위해, 저자는 용기를 내어 글을 쓰기 시작했다. 갑자기 불쑥 꺼낸 진지한 이야기에 멋쩍은
+											분위기가 될까 봐, 인기를 얻었다고 책을 내는 모양이 될까 봐, ‘빵떡’ 양유진은 밤을 지새우며 글자를 지우고
+											또 지우며 한 글자씩 꾹꾹 눌러 자신의 진심을 담았다. 그 진심 가득한 이야기들 속에서, 저자의 내면에
+											섬세하게 자리 잡은 수많은 사람이 선명하게 기록된다. 고층 항암 병동에서 입원했을 때 마주한 ‘갱스터
+											할머니’에게 꿋꿋한 삶의 태도를 배우고, 여행 중에 만난 동네 할아버지에게 고민의 힌트를 얻는다. 결국 살아갈
+											힘을 주는 것은 사람이라는 것을, 그 사람들과 함께 만든 꿈이라는 것을, 그 꿈을 통해 사람들과 함께 웃는
+											웃음이라는 것을, 이 책은 담백하고 진솔하게 당신에게 슬쩍 건넨다. 그런 의미에서 이 책은 ‘나’의 아픔에
+											대한 고백일 뿐 아니라, ‘나’를 살게 한 수많은 얼굴에 대한 기록이다.</p>
 										<div>리뷰</div>
 									</div>
 								</div>
-								<div class="prod_order_state">배송 날짜</div>
+								<div class="prod_order_state">
+									<div class="deliver">새벽배송</div>
+									<div><strong>내일(3/27,수,오전 7시 전 도착)</strong></div>
+								</div>
 								<div class="prod_btn_wrap">
 
 									<button type="button" class="btn_wish_icon unlike">
 										<!-- 하트 이모지 -->
-										<span id="unlike" class="material-icons">favorite_border
-										</span> <span id="like" class="material-icons">favorite </span>
+										<div id="unlike" class="material-icons">favorite_border
+										</div>
+										<div id="like" class="material-icons">favorite</div>
 									</button>
 
 									<div>
-										<a href="#" title="장바구니" class="button btnFade btnBlueGreen">장바구니</a>
+										<a href="http://127.0.0.1:8080/kyobo/cart" title="장바구니"
+											class="button btnFade btnBlueGreen">장바구니</a>
 										<div>바로구매</div>
 									</div>
 								</div>
@@ -150,9 +183,10 @@
 </section>
 <script>
 	/* 좋아요 버튼 활성화 */
-	$(document).ready(getlike);
-	$("button.btn_wish_icon").on("click", getlike);
-	function getlike() {
+	$(document).ready(linkHandler);
+	$(document).ready(checkHandler);
+	$("button.btn_wish_icon").on("click", linkHandler);
+	function linkHandler() {
 		/* console.log($(this)); */
 		if ($(this).hasClass("unlike")) {
 			$(this).removeClass("unlike");
@@ -163,6 +197,19 @@
 			$(this).addClass("unlike");
 			$("#like").css("display", "none");
 			$("#unlike").css("display", "block");
+		}
+	}
+	$("button.prod_chk_group").on("click", checkHandler);
+	function checkHandler() {
+		if ($(this).hasClass("cart_check")) {
+			$(this).removeClass("cart_check");
+			$(".uncheck").css("display", "block");
+			$(".check").css("display", "none");
+
+		} else {
+			$(this).addClass("cart_check");
+			$(".check").css("display", "none");
+			$(".uncheck").css("display", "block");
 		}
 	}
 </script>

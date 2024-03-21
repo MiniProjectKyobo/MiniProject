@@ -1,6 +1,22 @@
 
-header {
+#header_big {
     height: 180px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+#header_small {
+    height: 90px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+small_header {
+    height: 90px;
     top: 0;
     left: 0;
     width: 100%;
@@ -151,4 +167,19 @@ body{
     padding: 5px 14px;
     color: black;
     vertical-align: top;
+}
+
+header.sticky{
+	padding:0;
+	margin:0;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background: white;
+}
+header.sticky:after,header.sticky:before{
+	content:"";
+	display:table;
+	clear:both;
 }
