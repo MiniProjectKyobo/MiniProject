@@ -73,21 +73,37 @@ $("#formJoin01").on("blur", function(){
       				<div class="form_cont">
           				<div class="form_ip_pw">
             				<input type="password" class="form_ip" placeholder="비밀번호를 입력해 주세요." id="formJoin02" maxlength="15">
-            				<span class="valid_desc"></span>
+            				<button type="button" class="btn_toggle_pw">
+            					<span class="hidden"></span>
+            				</button>
             			</div>
             			
           				 <div class="pw_valid_wrap">
+          				 	<div class="valid_step_box">
+          				 		<ol class="valid_step_list">
+                    				<li class="step_item">
+                    					<span class="hidden">안전도 낮음</span>
+                    				</li>
+                   					<li class="step_item">
+                   						<span class="hidden">안전도 보통</span>
+                   					</li>
+                    				<li class="step_item">
+                    					<span class="hidden">안전도 높음</span>
+                    				</li>
+                				</ol>
+                				<div class="bubble_speech_box">
+                    				<span class="valid_state"></span>
+                				</div>
+          				 	</div>
 	            				<ul class="pw_valid_list">
-	                				<li class="pw_valid_item">영문, 숫자, 특수문자 3가지 조합 8자리 이상 또는<br>2가지 조합 10자리 이상</li>
+	                				<li class="pw_valid_item">영문, 숫자, 특수문자 3가지 조합 8자리 이상
 	                				<li class="pw_valid_item">공백 및 3자 이상의 연속 또는 중복 문자는 사용 불가</li>
 	            				</ul>
-	            			
         				</div>
       				</div>
     			</div>
 
 
-    
     			<div class="form_box">
         			<div class="form_title">
           				<label for="formJoin03" class="form_label">
@@ -98,16 +114,45 @@ $("#formJoin01").on("blur", function(){
       				<div class="form_cont">
 				          <div class="valid_check">
 				              <div class="form_ip_pw">
-				                  <input type="password" class="form_ip" placeholder="비밀번호를 한 번 더 입력해 주세요." id="formJoin03" maxlength="15" disabled="">
+				                  <input type="password" class="form_ip" placeholder="비밀번호를 한 번 더 입력해 주세요." id="formJoin03" maxlength="15">
 				                  <button type="button" class="btn_toggle_pw">
-				                  	<span class="hidden">비밀번호 숨김 상태</span>
+				                  <span class="hidden"></span>
 				                  </button>
 				              </div>
-				              
-				              <span class="valid_desc"></span>
+				              <span id="valid_desc"></span>
 				          </div>
 				      </div>
 				  </div>
+				  
+				  
+<script>
+
+$(function(){
+	$(".valid_check_success").hide();
+	$(".valid_check_fail").hide();
+	$("input").keyup(function(){
+		var pwd1=$("#formJoin02").val();
+		var pwd2=$("#formJoin03").val();
+		if(pwd1 != "" || pwd2 != ""){
+		if(pwd1 == pwd2) {
+			$(".valid_check_success").show();
+			$(".valid_check_fail").hide();
+			$("#valid_desc").html("일치합니다");
+		} else {
+			$(".valid_check_success").hide();
+			$(".valid_check_fail").show();
+			$("#valid_desc").html("불일치합니다");
+		}
+	}
+	});
+	
+});
+
+
+</script>
+				  
+				  
+				  
 				    
 				<div class="form_box">
 					<div class="form_title">
