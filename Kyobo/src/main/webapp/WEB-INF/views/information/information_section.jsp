@@ -1,11 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-
 <div id="main">
 	<section id="main_window">
 		<div id="book_title">  <span style="color: #595959; font-size: smaller;">예약판매</span><b> 고층 입원실의 갱스터 할머니 </b></div>
-     	<img src="<%=request.getContextPath()%>/resources/images/book_cover_1.jpg" class="book_image">
+		
+		<div id="carouselExampleFade" class="carousel slide carousel-fade book_image">
+			  <div class="carousel-inner " style="height: 537px;">
+			    <div class="carousel-item active">
+			      <img src="<%=request.getContextPath()%>/resources/images/book_cover_1.jpg"  class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="<%=request.getContextPath()%>/resources/images/book_cover_2.jpg"  class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="<%=request.getContextPath()%>/resources/images/book_cover_3.jpg"  class="d-block w-100" alt="...">
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon carousel_arrow_style" aria-hidden="false"></span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			    <span class="carousel-control-next-icon carousel_arrow_style" aria-hidden="false"></span>
+			  </button>
+			  
+		</div>
+
+     	
 	</section>
 
     <nav id="nav_window"></nav>

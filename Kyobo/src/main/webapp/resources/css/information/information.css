@@ -124,7 +124,12 @@ body{
 }
 
 .right {
+	display: flex;
     padding: 8px;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
 }
 
 .product_details > .left > #price {
@@ -292,3 +297,49 @@ padding: 25px;
 hr {
 	display: block;
 }
+
+.increment {
+	display: flex;
+	height: 40px;
+	width: 70px;
+	margin-right: 60px;
+}
+
+.inc_down {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 8px 0px 0px 8px;
+	border-top: solid lightgrey 1px;
+	border-bottom: solid lightgrey 1px;
+	border-left: solid lightgrey 1px;
+	padding-left: 10px;
+	}
+.book_count {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	width: 60px;
+	border-top: solid lightgrey 1px;
+	border-bottom: solid lightgrey 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	
+}
+.inc_up {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 0px 8px 8px 0px;
+	border-top: solid lightgrey 1px;
+	border-bottom: solid lightgrey 1px;
+	border-right: solid lightgrey 1px;
+	padding-right: 10px;
+}
+
+.inc_icon {
+	width: 12px;
+}
+
+
