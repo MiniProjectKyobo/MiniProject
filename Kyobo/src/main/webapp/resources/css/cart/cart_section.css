@@ -52,3 +52,10 @@
 	border-radius: 10px;
 	background: #fff; 
 }
+
+.contents_inner .btn_wrap{
+	color: #fff;
+	background: #5055b1;
+	border: 1px solid #5055b1;
+	
+}
