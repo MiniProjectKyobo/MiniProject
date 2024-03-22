@@ -23,19 +23,23 @@
 	display: flex;
 }
 /* 전체, 하트, 삭제 부분  */
+
 .contents_inner .cart_top_wrap .util_btn_box{
 	display: flex;
 	padding: 15px 20px 15px 18px;
 	background: #f7f7f7;
+	justify-content: space-between;
 
 }
 .contents_inner .btn_wish size_xs .ico_wish{
+/* 	float: right; */
 	width: 14px;
 	height: 14px;
 	margin-top: 7px;
 	
 	
 }
+
 /* 유의사항  */
 .contents_inner .cart_body_wrap{
 	background: #f7f7f7;
