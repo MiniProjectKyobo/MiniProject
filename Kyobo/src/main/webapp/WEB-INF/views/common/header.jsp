@@ -28,9 +28,8 @@
     <header id="header_big">
         <div class="nav_box">
             <nav class="nav_bar">
-                <a href=".carousel-control {
-    background-image: none !important;
-}">회원가입</a>
+              
+                <a href="http://localhost:8080/kyobo/signup">회원가입</a>
                 <a href="http://localhost:8080/kyobo/login">로그인</a>
                 <a href="#">회원혜택</a>
                 <a href="#">고객센터</a> 
