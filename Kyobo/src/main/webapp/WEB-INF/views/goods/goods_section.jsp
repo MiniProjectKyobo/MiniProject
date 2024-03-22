@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <section class="breadcrumb_wrap">
-	<div class="breadcrumb_inner">해더 영역 - 제외할 곳</div>
+	<div class="breadcrumb_inner">베스트셀러 / 온라인 베스트 / 전체</div>
 </section>
 <section class="contents_wrap">
 	<section class="contents_inner contents_flex">
@@ -12,42 +12,37 @@
 				<div class=" title_wrap title_box">베스트셀러</div>
 			</div>
 			<div class="aside_body">
-				<ul>
-					<li>
-						<h1>종합베스트</h1>
-						<ul>
-							<li>주간</li>
-							<li>월간</li>
-							<li>연간</li>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">종합베스트셀러</li>
+					<li class="list-group-item"><ul
+							class="list-group list-group-flush">
+							<li class="list-group-item">주간</li>
+							<li class="list-group-item">월간</li>
+							<li class="list-group-item">연간</li>
+						</ul></li>
+					<li class="list-group-item">온라인 베스트</li>
+					<li class="list-group-item"><ul
+							class="list-group list-group-flush">
+							<li class="list-group-item">일간</li>
+							<li class="list-group-item">주간</li>
+							<li class="list-group-item">월간</li>
+						</ul></li>
+					<li class="list-group-item">실시간 베스트</li>
+					<li class="list-group-item">매장별 베스트</li>
+					<li class="list-group-item">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">인물베스트</li>
+							<li class="list-group-item">일간</li>
+							<li class="list-group-item">주간</li>
+							<li class="list-group-item">월간</li>
 						</ul>
 					</li>
-					<li><h1>온라인 베스트</h1>
-						<ul>
-							<li>일간</li>
-							<li>주간</li>
-							<li>월간</li>
-
-						</ul></li>
-					<li>
-						<h1>실시간 베스트</h1>
-					</li>
-					<li>
-						<h1>매장별 베스트</h1>
-					</li>
-					<li><h1>온라인 베스트</h1>
-						<ul>
-							<li>일간</li>
-							<li>주간</li>
-							<li>월간</li>
-							<li>
-								<h1>스터디 셀러</h1>
-							</li>
-						</ul></li>
+					<li class="list-group-item">스테디셀러</li>
 				</ul>
 			</div>
 		</aside>
 		<!-- contents -->
-		<section>
+		<section class="main_wrap">
 			<div class="title_wrap title_size_lg has_sub_title">
 				<h1 class="title_heading">온라인 일간 베스트</h1>
 				<div class="sub_title_wrap">인터넷에서 판매되는 상품의 지난 하루간 가장 많이 판매된
@@ -55,6 +50,7 @@
 			</div>
 			<div class="tab_wrap title_wrap">
 				<div class="tab_list_wrap">
+					<!-- 
 					<ul class="title_tab">
 						<li class="tab_text"><a><span>전체</span></a></li>
 						<li class="tab_text"><a><span>국내도서</span></a></li>
@@ -64,12 +60,25 @@
 						<li class="tab_text"><a><span>sam</span></a></li>
 						<li class="tab_text"><a><span>핫트렉스</span></a></li>
 					</ul>
+					 -->
+					<!-- 부트스트랩 현재 작동 안 함 -->
+					<ul class="nav nav-pills nav-fill">
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" href="#">Active</a></li>
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" href="#">Much longer nav link</a></li>
+						<li class="nav-item"><a class="nav-link active"
+							aria-current="page" href="#">Link</a></li>
+						<li class="nav-item"><a class="nav-link active">Disabled</a>
+						</li>
+					</ul>
 				</div>
 
 				<div class="tab_content">
 					<div class="list_wrap">
 						<span class="font_sort">2024년 03월 13일 ~ 2024년 03월 19일</span>
 					</div>
+
 					<div>1 2 3 4 5 6 7</div>
 					<div class="line">
 						<!-- 책 리스트 -->
@@ -81,7 +90,8 @@
 								</button>
 								<div class="prod_area">
 									<div class="prod_thumb_box ">
-										<a href="http://127.0.0.1:8080/kyobo/information" class="proid_link"> <img data-kbbfn="s3-image"
+										<a href="http://127.0.0.1:8080/kyobo/information"
+											class="proid_link"> <img data-kbbfn="s3-image"
 											loading="lazy" alt="고층 입원실의 갱스터 할머니"
 											src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
 											data-src="https://contents.kyobobook.co.kr/sih/fit-in/300x0/pdt/9791171174508.jpg"
@@ -150,7 +160,9 @@
 											href="http://127.0.0.1:8080/kyobo/cart" role="button">바로구매</a>
 
 									</div>
-								</div></li>
+								</div>
+							</li>
+
 							<li class="prod_item">광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는
 								자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다. 모든 국민은 능력에
 								따라 균등하게 교육을 받을 권리를 가진다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다. 이 헌법에
