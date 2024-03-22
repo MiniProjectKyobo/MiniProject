@@ -32,10 +32,10 @@
             	
             	<div>
                 <span>
-                    <a href="" id="shopping_list"> 장바구니</a>
+                    <a href="http://localhost:8080/kyobo/cart" id="shopping_list"> 장바구니</a>
                 </span>
                 <span>
-                    <a href="" id="purchase"> 바로구매</a>
+                    <a href="http://localhost:8080/kyobo/cart" id="purchase"> 바로구매</a>
                 </span>
             </div>
         </div>

@@ -32,18 +32,18 @@
     <nav id="nav_window"></nav>
      
 	<aside class="aside" id="aside_window_right">
-    	<div>
+    	<div class="aside_price_text">
         	<span id="aside_price"> <b> <span style="color: #4dac27;"> 10% </span> 16,920</b>원 </span>
          	<span style="color:#767676;"><s><span style="font-size: smaller;"> 18,800원</span></s></span>
      	</div>
-    	<hr color="#eaeaea" width="100%" size="1">
+    	<div class=aside_line> </div>
     	<div class="aside_delivery">
          	<p style="text-align:left"> <b> 배송안내  </b> </p>
          	<p style="text-align:right"> 무료배송  </p>
          	<b><p style="text-align:right"> 3/20(수) 출고예정 </p></b>
          	<p style="text-align:right"> <b> 서울시 종로구 종로 1 </b> </p>
      	</div>
-     	<hr color="#eaeaea" width="100%" size="1">
+    	<div class=aside_line> </div>
      	<div class="aside_alert">
         	<span style="font-size: larger;"><b style="color: black;">알립니다.</b></span>
          	<br>
@@ -55,6 +55,10 @@
                 본 상품은 3/20(수) 출고예정인 예약판매 상품입니다. 단, 거래처의 사정으로 출고가 지연될 수 있으니, 이 점 양해 부탁드립니다.
                 예약판매 상품의 경우 실제 출간/출시 후 상품정보가 달라질 수 있습니다. 이 점 양해 부탁드립니다.
             </p>
+     	</div>
+     	
+     	<div class="aside_location">
+			매장 재고·위치
      	</div>
      </aside>
 
