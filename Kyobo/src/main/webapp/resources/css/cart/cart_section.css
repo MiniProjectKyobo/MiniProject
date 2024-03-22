@@ -1,0 +1,61 @@
+/*  */
+.contents_inner .cart_body_inner {
+	width: 890px;
+}
+
+.contents_inner .cart_body {
+	position: relative;
+}
+.contents_inner .cart_info_wrap {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 273px;
+}
+
+
+.contents_inner .cart_top_wrap .cart_title_box{
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.contents_inner .cart_top_wrap .cart_title_box ol{
+	display: flex;
+}
+/* 전체, 하트, 삭제 부분  */
+
+.contents_inner .cart_top_wrap .util_btn_box{
+	display: flex;
+	padding: 15px 20px 15px 18px;
+	background: #f7f7f7;
+	justify-content: space-between;
+
+}
+.contents_inner .btn_wish size_xs .ico_wish{
+/* 	float: right; */
+	width: 14px;
+	height: 14px;
+	margin-top: 7px;
+	
+	
+}
+
+/* 유의사항  */
+.contents_inner .cart_body_wrap{
+	background: #f7f7f7;
+}
+/* 결제창 */
+.contents_inner .payments_info_area{
+	margin-bottom: 14px;
+	padding: 24px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background: #fff; 
+}
+
+.contents_inner .btn_wrap{
+	color: #fff;
+	background: #5055b1;
+	border: 1px solid #5055b1;
+	
+}

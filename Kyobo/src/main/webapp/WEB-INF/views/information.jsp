@@ -19,15 +19,15 @@
 
 <body>
 
-<div class="header_wrapper">
+<header class="header_wrapper">
 <%@include file="/WEB-INF/views/common/header.jsp" %>
-</div>
-<div class="container_wrapper">
+</header>
+<main class="container_wrapper">
 <%@include file="/WEB-INF/views/information/information_section.jsp" %>
-</div>
-<div class="footer_wrapper">
-<%@include file="/WEB-INF/views/information/information_footer.jsp" %>
-</div>
+</main>
+<main class="footer_wrapper">
+<%@include file="/WEB-INF/views/information/information_bottom_bar.jsp" %>
+</main>
 
 </body>
 </html>

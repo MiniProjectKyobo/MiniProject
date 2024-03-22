@@ -272,8 +272,10 @@ $(document).ready(function(){
 	$("#termsAllChk").click(function(){
 		if($("#termsAllChk").prop("checked")) {
 			$("input[type='checkbox']").prop("checked", true);
+			$("input[name='check3']").removeAttr("readonly", true);
 		}else {
 			$("input[type='checkbox']").prop("checked", false);
+			$("input[name='check3']").prop("readonly", true); 
 		}
 	});
 });
@@ -372,16 +374,21 @@ $(document).ready(function(){
  
  <script>
  $(document).ready(function(){
-	$("#kyoboLifePlanet").click(function(){
+	
+	 
+	 var mHandler = $("#kyoboLifePlanet").click(function(){
+		
 		if($("#kyoboLifePlanet").prop("checked")){
 			$("input[name='check3']").removeAttr("readonly");
-		} else {
-			$("input[name='check3']").prop("readonly", true);
+		}  else {
+			$("input[name='check3']").prop("readonly", true); 
 		}
-	});
-	 
+
+	});	
+
+	
  });
-	 
+	
  
 /*   $(document).ready(function(){
 		$("#kyoboLifePlanet").on("click", function(){

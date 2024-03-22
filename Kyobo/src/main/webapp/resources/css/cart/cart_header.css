@@ -5,11 +5,7 @@
     left: 0;
     width: 100%;
     border-bottom: 1px solid lightgray;
-    z-index: 100;
-    
 }
-
-
 
 #header_small {
     height: 90px;
@@ -17,8 +13,6 @@
     left: 0;
     width: 100%;
     border-bottom: 1px solid lightgray;
-    z-index: 100;
-    
 }
 
 small_header {
@@ -29,6 +23,11 @@ small_header {
     border-bottom: 1px solid lightgray;
 }
 
+
+* {
+
+box-sizing: border-box;
+}
 
 
 body{
@@ -184,4 +183,3 @@ header.sticky:after,header.sticky:before{
 	display:table;
 	clear:both;
 }
-

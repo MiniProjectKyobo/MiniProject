@@ -28,8 +28,9 @@
     <header id="header_big">
         <div class="nav_box">
             <nav class="nav_bar">
-                <a href="#">회원가입</a>
-                <a href="#">로그인</a>
+              
+                <a href="http://localhost:8080/kyobo/signup">회원가입</a>
+                <a href="http://localhost:8080/kyobo/login">로그인</a>
                 <a href="#">회원혜택</a>
                 <a href="#">고객센터</a> 
             </nav>
@@ -37,7 +38,7 @@
 
         <div class="header_box">
             <div class="header_left">
-                <a href="#"><img src="<%=request.getContextPath()%>/resources/images/img_logo_kyobo@2x.png" id="logo_icon"></a>
+                <a href="http://localhost:8080/kyobo/information"><img src="<%=request.getContextPath()%>/resources/images/img_logo_kyobo@2x.png" id="logo_icon"></a>
 
 
                 <div class="search_box">
@@ -47,8 +48,8 @@
             </div>
 
             <div class="header_right">
-                <a href="#"><img src="<%=request.getContextPath()%>/resources/images/cart.png" id="cart_icon"></a>
-                <a href="#"><img src="<%=request.getContextPath()%>/resources/images/profile.png" id="profile_icon"></a>
+                <a href="http://localhost:8080/kyobo/cart"><img src="<%=request.getContextPath()%>/resources/images/cart.png" id="cart_icon"></a>
+                <a href="http://localhost:8080/kyobo/login"><img src="<%=request.getContextPath()%>/resources/images/profile.png" id="profile_icon"></a>
             </div>
 
         </div>
@@ -79,7 +80,7 @@
     <header id="header_small" class="sticky" style="display:none;">
        <div class="header_box">
            <div class="header_left">
-               <a href="#"><img src="<%=request.getContextPath()%>/resources/images/img_logo_kyobo@2x.png" id="logo_icon"></a>
+               <a href="http://localhost:8080/kyobo/information"><img src="<%=request.getContextPath()%>/resources/images/img_logo_kyobo@2x.png" id="logo_icon"></a>
 
 
                <div class="search_box">
@@ -89,8 +90,8 @@
            </div>
 
            <div class="header_right">
-               <a href="#"><img src="<%=request.getContextPath()%>/resources/images/cart.png" id="cart_icon"></a>
-               <a href="#"><img src="<%=request.getContextPath()%>/resources/images/profile.png" id="profile_icon"></a>
+               <a href="http://localhost:8080/kyobo/cart"><img src="<%=request.getContextPath()%>/resources/images/cart.png" id="cart_icon"></a>
+               <a href="http://localhost:8080/kyobo/login"><img src="<%=request.getContextPath()%>/resources/images/profile.png" id="profile_icon"></a>
            </div>
        </div>
    </header>
