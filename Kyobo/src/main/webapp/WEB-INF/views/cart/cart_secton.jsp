@@ -25,7 +25,7 @@
 					<div class="right_area">
 						<button type="button" class="btn_wish size_xs"
 							data-cart-list-wish-button>
-							<span class="ico_wish"></span><span class="hidden">찜하기</span>
+							<span class="ico_wish"></span><span class="hidden"><img >찜하기</span>
 						</button>
 						<button type="button" class="btn_delete" data-cart-list-del-button>
 							<span class="ico_delete"></span><span class="hidden">삭제</span>
@@ -51,11 +51,11 @@
 						</div>
 					</div>
 				</div>
-				<div>광고배너</div>
+				
 				<div class="cart_body_wrap">
 
 					<div class="fold_box_expened ">
-						<div class="fold_box_header">"장바구니 유의사항"</div>
+						<div class="fold_box_header">장바구니 유의사항</div>
 						<div class="fold_box_contents">
 							<div class="bul_item_dot font_size_xxs">- 택배 배송일정은 기본배송지
 								기준으로 예상일이 노출됩니다.</div>
@@ -104,7 +104,7 @@
 						</div>
 						<div class="payments_info_box">
 							<li class="payments_info_item total">
-								<p class="label">결제 예정 금액 0 원</p>
+								<p class="label">결제 예정 금액</p>
 								<div class="right_box"></div> <span class="price"> <span
 									class="val spot">0</span> <span class="unit"></span>
 							</span>
@@ -113,7 +113,7 @@
 						</div>
 						<div class="btn_wrap full">
 							<button type="button" class="btn_lg btn_primary" data-page-order>
-								<span class="text">"주문하기("<span data-sum-totalcnt>0</span>")"
+								<span class="text">주문하기(<span data-sum-totalcnt>0</span>)
 								</span>
 							</button>
 						</div>
