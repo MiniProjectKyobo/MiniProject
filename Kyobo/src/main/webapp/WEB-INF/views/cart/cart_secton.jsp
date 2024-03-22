@@ -71,6 +71,8 @@
 					</div>
 
 				</div>
+				</div>
+			
 
 				<div class="cart_info_wrap">
 					<div class="payments_info_area">
@@ -117,7 +119,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+
 		</div>
 	</div>
 </section>
