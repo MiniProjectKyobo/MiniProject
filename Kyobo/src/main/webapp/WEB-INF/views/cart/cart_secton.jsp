@@ -49,9 +49,9 @@
 
 						
 						<div class="btn_wrap" style data-no-data>
-							<button type="button"
-								class="btn_sm_btn_primary">
-								<span class="text">로그인</span>
+							<button type="button" class="btn_lg btn_primary" data-page-order>
+								<span class="text">로그인
+								</span>
 							</button>
 						</div>
 					</div>

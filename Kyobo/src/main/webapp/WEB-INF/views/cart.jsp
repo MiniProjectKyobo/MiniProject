@@ -1,9 +1,9 @@
 <link href="<%=request.getContextPath()%>/resources/css/reset.css"  rel="stylesheet">
-<link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/resources/css/components.css"  rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/cart/cart_section.css"  rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/cart/cart_header.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/cart/cart_footer.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/resources/css/components.css"  rel="stylesheet">
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
