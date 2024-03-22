@@ -13,31 +13,21 @@
 			</div>
 			<div class="aside_body">
 				<ul class="list-group list-group-flush">
-					<li class="list-group-item">종합베스트셀러</li>
-					<li class="list-group-item"><ul
-							class="list-group list-group-flush">
-							<li class="list-group-item">주간</li>
-							<li class="list-group-item">월간</li>
-							<li class="list-group-item">연간</li>
-						</ul></li>
-					<li class="list-group-item">온라인 베스트</li>
-					<li class="list-group-item"><ul
-							class="list-group list-group-flush">
-							<li class="list-group-item">일간</li>
-							<li class="list-group-item">주간</li>
-							<li class="list-group-item">월간</li>
-						</ul></li>
-					<li class="list-group-item">실시간 베스트</li>
-					<li class="list-group-item">매장별 베스트</li>
-					<li class="list-group-item">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">인물베스트</li>
-							<li class="list-group-item">일간</li>
-							<li class="list-group-item">주간</li>
-							<li class="list-group-item">월간</li>
-						</ul>
-					</li>
-					<li class="list-group-item">스테디셀러</li>
+					<li class="list-group-item list-space"><strong>종합베스트셀러</strong></li>
+					<li class="list-group-item list-space">주간</li>
+					<li class="list-group-item list-space">월간</li>
+					<li class="list-group-item list-space">연간</li>
+					<li class="list-group-item list-space"><strong>온라인 베스트</strong></li>
+					<li class="list-group-item list-space">일간</li>
+					<li class="list-group-item list-space">주간</li>
+					<li class="list-group-item list-space">월간</li>
+					<li class="list-group-item list-space"><strong>실시간 베스트</strong></li>
+					<li class="list-group-item list-space"><strong>매장별 베스트</strong></li>
+					<li class="list-group-item list-space"><strong>인물베스트</strong></li>
+					<li class="list-group-item list-space">일간</li>
+					<li class="list-group-item list-space">주간</li>
+					<li class="list-group-item list-space">월간</li>
+					<li class="list-group-item list-space"><strong>스테디셀러</strong></li>
 				</ul>
 			</div>
 		</aside>
