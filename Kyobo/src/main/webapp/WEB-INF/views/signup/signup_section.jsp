@@ -73,9 +73,6 @@ $("#formJoin01").on("blur", function(){
       				<div class="form_cont">
           				<div class="form_ip_pw">
             				<input type="password" class="form_ip" placeholder="비밀번호를 입력해 주세요." id="formJoin02" maxlength="15">
-            				<button type="button" class="btn_toggle_pw">
-            					<span class="hidden"></span>
-            				</button>
             			</div>
             			
           				 <div class="pw_valid_wrap">
@@ -103,7 +100,12 @@ $("#formJoin01").on("blur", function(){
       				</div>
     			</div>
 
+<script>
 
+
+
+</script>
+    
     			<div class="form_box">
         			<div class="form_title">
           				<label for="formJoin03" class="form_label">
@@ -137,11 +139,11 @@ $(function(){
 		if(pwd1 == pwd2) {
 			$(".valid_check_success").show();
 			$(".valid_check_fail").hide();
-			$("#valid_desc").html("일치합니다");
+			$("#valid_desc").html("일치").css('color', 'green');
 		} else {
 			$(".valid_check_success").hide();
 			$(".valid_check_fail").show();
-			$("#valid_desc").html("불일치합니다");
+			$("#valid_desc").html("불일치").css('color', 'red');
 		}
 	}
 	});
@@ -263,6 +265,24 @@ $(function(){
     	<p class="title_heading">서비스 이용약관 동의</p>
 	 </div>
 
+
+<script>
+
+$(document).ready(function(){
+	$("#termsAllChk").click(function(){
+		if($("#termsAllChk").prop("checked")) {
+			$("input[type='checkbox']").prop("checked", true);
+		}else {
+			$("input[type='checkbox']").prop("checked", false);
+		}
+	});
+});
+
+
+
+
+</script>
+
 	 <div class="terms_agree_chk_wrap">
     	<div class="terms_agree_row">
     		<span class="form_chk">
@@ -335,7 +355,7 @@ $(function(){
         	<ul class="chk_col_list">
             	<li class="chk_col_item">
     				<span class="form_chk">
-        				<input type="checkbox" id="personal" name="check3">
+        				<input type="checkbox" id="personal" name="check4">
         				<label for="personal">
             				개인정보 수집 및 이용 동의 
             				<span class="desc_gray">(선택)</span>
@@ -349,11 +369,41 @@ $(function(){
         				</button>
     				</div>
 				 </li>
+ 
+ <script>
+ $(document).ready(function(){
+	$("#kyoboLifePlanet").click(function(){
+		if($("#kyoboLifePlanet").prop("checked")){
+			$("input[name='check3']").removeAttr("readonly");
+		} else {
+			$("input[name='check3']").prop("readonly", true);
+		}
+	});
+	 
+ });
+	 
+ 
+/*   $(document).ready(function(){
+		$("#kyoboLifePlanet").on("click", function(){
+			if($("#kyoboLifePlanet").prop("checked")) {
+				$("input[name='check3']").removeAttr("readonly");
+			}else {
+				$("input[name='check3']").prop("readonly", true);
+			}
+		
+		});
+		});
+
+ 
+  */
+
+ 
+ </script>
             
             	 <li class="chk_col_item">
                 	<div class="marketing_agree_area">
                     	<span class="form_chk">
-                        	<input  type="checkbox" id="kyoboLifePlanet" name="check3">
+                        	<input  type="checkbox" id="kyoboLifePlanet">
                         	<label for="kyoboLifePlanet">
                             	교보라이프플래닛 제3자 정보제공 동의 
                             	<span class="desc_gray">(선택)</span>
@@ -372,7 +422,7 @@ $(function(){
                         	<ul class="chk_row_list">
                             	<li class="chk_row_item type_all">
                                 	<span class="form_chk">
-	                                    <input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="">
+	                                    <input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="readonly">
                                     	<label for="termsMarketingChk2" class="fc_gray">
                                     		마케팅 수신 동의 
                                     		<span class="desc_gray">(선택)</span>
@@ -381,13 +431,13 @@ $(function(){
                             	</li>
                             	<li class="chk_row_item">
                                 	<span class="form_chk">
+	                                    <input id="termsMarketingChk201" type="checkbox" name="check3" readonly="readonly">
                                     	<label for="termsMarketingChk201" class="fc_gray">SMS</label>
-	                                    	<input id="termsMarketingChk201" type="checkbox" name="check3" readonly="">
                                 	</span>
                             	</li>
                             	<li class="chk_row_item fc_">
                                 	<span class="form_chk">
-	                                    <input type="checkbox" id="termsMarketingChk202" name="check3" readonly="" >
+	                                    <input type="checkbox" id="termsMarketingChk202" name="check3" readonly="readonly" >
                                     	<label for="termsMarketingChk202" class="fc_gray">이메일</label>
                                 	</span>
                             	</li>
