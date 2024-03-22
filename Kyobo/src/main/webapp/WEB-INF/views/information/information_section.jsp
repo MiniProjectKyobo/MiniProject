@@ -1,49 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+
 <div id="main">
 	<section id="main_window">
 		<div id="book_title">  <span style="color: #595959; font-size: smaller;">예약판매</span><b> 고층 입원실의 갱스터 할머니 </b></div>
-		
-		<div id="carouselExampleFade" class="carousel slide carousel-fade book_image">
-			  <div class="carousel-inner " style="height: 537px;">
-			    <div class="carousel-item active">
-			      <img src="<%=request.getContextPath()%>/resources/images/book_cover_1.jpg"  class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="<%=request.getContextPath()%>/resources/images/book_cover_2.jpg"  class="d-block w-100" alt="...">
-			    </div>
-			    <div class="carousel-item">
-			      <img src="<%=request.getContextPath()%>/resources/images/book_cover_3.jpg"  class="d-block w-100" alt="...">
-			    </div>
-			  </div>
-			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-			    <span class="carousel-control-prev-icon carousel_arrow_style" aria-hidden="false"></span>
-			  </button>
-			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-			    <span class="carousel-control-next-icon carousel_arrow_style" aria-hidden="false"></span>
-			  </button>
-			  
-		</div>
-
-     	
+     	<img src="<%=request.getContextPath()%>/resources/images/book_cover_1.jpg" class="book_image">
 	</section>
 
     <nav id="nav_window"></nav>
      
 	<aside class="aside" id="aside_window_right">
-    	<div class="aside_price_text">
+    	<div>
         	<span id="aside_price"> <b> <span style="color: #4dac27;"> 10% </span> 16,920</b>원 </span>
          	<span style="color:#767676;"><s><span style="font-size: smaller;"> 18,800원</span></s></span>
      	</div>
-    	<div class=aside_line> </div>
+    	<hr color="#eaeaea" width="100%" size="1">
     	<div class="aside_delivery">
          	<p style="text-align:left"> <b> 배송안내  </b> </p>
          	<p style="text-align:right"> 무료배송  </p>
          	<b><p style="text-align:right"> 3/20(수) 출고예정 </p></b>
          	<p style="text-align:right"> <b> 서울시 종로구 종로 1 </b> </p>
      	</div>
-    	<div class=aside_line> </div>
+     	<hr color="#eaeaea" width="100%" size="1">
      	<div class="aside_alert">
         	<span style="font-size: larger;"><b style="color: black;">알립니다.</b></span>
          	<br>
@@ -55,10 +34,6 @@
                 본 상품은 3/20(수) 출고예정인 예약판매 상품입니다. 단, 거래처의 사정으로 출고가 지연될 수 있으니, 이 점 양해 부탁드립니다.
                 예약판매 상품의 경우 실제 출간/출시 후 상품정보가 달라질 수 있습니다. 이 점 양해 부탁드립니다.
             </p>
-     	</div>
-     	
-     	<div class="aside_location">
-			매장 재고·위치
      	</div>
      </aside>
 

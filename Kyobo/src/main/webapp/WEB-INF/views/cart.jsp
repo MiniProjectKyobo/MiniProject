@@ -12,10 +12,6 @@
 <head>
 <meta charset="UTF-8">
 <title>cart</title>
-<!-- jquery -->
-<!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet"> -->
 </head>
 <body>
 <div class="wrapper contents_cart">
