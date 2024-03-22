@@ -13,16 +13,20 @@
 			</div>
 			<div class="aside_body">
 				<ul class="list-group list-group-flush">
-					<li class="list-group-item list-space"><strong>종합베스트셀러</strong></li>
+					<li class="list-group-item list-space"><a
+						href="http://127.0.0.1:8080/kyobo/goods"><strong>종합베스트셀러</strong></a></li>
 					<li class="list-group-item list-space">주간</li>
 					<li class="list-group-item list-space">월간</li>
 					<li class="list-group-item list-space">연간</li>
-					<li class="list-group-item list-space"><strong>온라인 베스트</strong></li>
+					<li class="list-group-item list-space"><strong>온라인
+							베스트</strong></li>
 					<li class="list-group-item list-space">일간</li>
 					<li class="list-group-item list-space">주간</li>
 					<li class="list-group-item list-space">월간</li>
-					<li class="list-group-item list-space"><strong>실시간 베스트</strong></li>
-					<li class="list-group-item list-space"><strong>매장별 베스트</strong></li>
+					<li class="list-group-item list-space"><strong>실시간
+							베스트</strong></li>
+					<li class="list-group-item list-space"><strong>매장별
+							베스트</strong></li>
 					<li class="list-group-item list-space"><strong>인물베스트</strong></li>
 					<li class="list-group-item list-space">일간</li>
 					<li class="list-group-item list-space">주간</li>
@@ -40,9 +44,10 @@
 			</div>
 			<div class="tab_wrap title_wrap">
 				<div class="tab_list_wrap">
-					<!-- 
+								
 					<ul class="title_tab">
-						<li class="tab_text"><a><span>전체</span></a></li>
+						<li class="tab_text"><a
+							href="http://127.0.0.1:8080/kyobo/goods"><span>전체</span></a></li>
 						<li class="tab_text"><a><span>국내도서</span></a></li>
 						<li class="tab_text"><a><span>외국도서</span></a></li>
 						<li class="tab_text"><a><span>교보 only</span></a></li>
@@ -50,18 +55,7 @@
 						<li class="tab_text"><a><span>sam</span></a></li>
 						<li class="tab_text"><a><span>핫트렉스</span></a></li>
 					</ul>
-					 -->
-					<!-- 부트스트랩 현재 작동 안 함 -->
-					<ul class="nav nav-pills nav-fill">
-						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="#">Active</a></li>
-						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="#">Much longer nav link</a></li>
-						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="#">Link</a></li>
-						<li class="nav-item"><a class="nav-link active">Disabled</a>
-						</li>
-					</ul>
+
 				</div>
 
 				<div class="tab_content">
@@ -106,7 +100,11 @@
 											</ul>
 
 										</div>
-										<div class="auto_overflow_contents">고층 입원실의 갱스터 할머니</div>
+
+										<div class="auto_overflow_contents">
+											<a href="http://127.0.0.1:8080/kyobo/information">고층 입원실의
+												갱스터 할머니</a>
+										</div>
 										<div>양유진 21세김북스 2024.03.20</div>
 										<div>10% 22,500원 \ 1,256p</div>
 										<p class="prod_introduction">누군가의 오랜 아픔을 마주하는 일이 이토록 환하고
@@ -147,7 +145,7 @@
 										<a class="btn btn-primary"
 											href="http://127.0.0.1:8080/kyobo/cart" role="button">장바구니</a>
 										<a class="btn btn-primary"
-											href="http://127.0.0.1:8080/kyobo/cart" role="button">바로구매</a>
+											href="http://127.0.0.1:8080/kyobo/login" role="button">바로구매</a>
 
 									</div>
 								</div>
