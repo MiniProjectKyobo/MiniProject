@@ -24,10 +24,10 @@
 
 					<div class="right_area">
 						<button type="button" class="btn_wish size_xs"
-							data-cart-list-wish-button>
-							<span class="ico_wish"></span><span class="hidden"><img >찜하기</span>
+							data-cart-list-wish-button><img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_heart_h14@2x.png">
+							<span class="ico_wish"></span><span class="hidden">찜하기</span>
 						</button>
-						<button type="button" class="btn_delete" data-cart-list-del-button>
+						<button type="button" class="btn_delete" data-cart-list-del-button><img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_delete_black@2x.png" >
 							<span class="ico_delete"></span><span class="hidden">삭제</span>
 						</button>
 					</div>
