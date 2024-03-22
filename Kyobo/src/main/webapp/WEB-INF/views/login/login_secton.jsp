@@ -5,14 +5,14 @@
 				<div class="form_col_group valid_check">
 					<div class="col_box id">
 						<div class="awesomplete">
-						<input type="text" placeholder="아이디를 입력해주세요" class="form_ip" id="id1" >
+						<input type="text" placeholder="아이디를 입력해주세요" class="form_ip" id="id1">
 						<span class="valid_desc-id"></span>
 						</div>
 					</div>
 					
 					<div class="col_box pw">
 						<div class="form_ip_pw">
-						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip" id="pw1" >
+						<input type="password" placeholder="비밀번호를 입력해주세요" class="form_ip" id="pw1">
 						<span class="valid_desc-pw"></span>
 						</div>
 					</div>
@@ -44,7 +44,7 @@
 			
 			<div class="join_induce_wrap">
 				<div class="btn_wrap justify">
-				<a href="http://127.0.0.1:8080/kyobo/signup" class="btn_lg">
+				<a href="http://127.0.0.1:8080/kyobo/signup" class="btn_lg" >
 				<span class="text">회원가입</span>
 				</a>
 				</div>
@@ -82,12 +82,13 @@ $("#pw1").on("blur", function(){
 	}
 	$(".valid_desc-pw").html(msg);
 });
+
 </script>
 
-<!-- <script>
+<!--  <script>
 $('.form_ip').on("oninput",function(){
-	var strid=$("#id1").val().trim().length;
-	var strpw=$("#pw1").val().trim().length;
+	var strid=$("#id1").lenght;
+	var strpw=$("#id1").lenght;
 	if(strid&&strpw>1){
 		document.getElementsByClassName("button.purple");
 	}else{
@@ -96,6 +97,146 @@ $('.form_ip').on("oninput",function(){
 	});
 
 console.log("#id1".length);
-</script> 
- -->
+</script> --> 
 
+ <script>
+/* 
+ function loginBtnHandler(){
+	var idbt=$("#id1").val().length;
+	var pwbt=$("#pw1").val().length;
+	if((idbt && pwbt) > 1){
+		$(btnPurpleHandler);
+	}
+}
+function btnPurpleHandler(){
+	$("button.purple").css('background','#5055b1');
+} 
+*/
+</script> 
+
+<!-- <script>
+function loginBtnHandler(){
+	var idbt=$("#id1").on("keyup",);
+}
+
+
+function btnPurpleHandler(){
+	$("button.purple").css('background','#5055b1');
+}
+</script> -->
+
+<!-- <script>
+function loginBtnHandler(){
+	
+	var idbt=$("#id1");
+	var pwbt=$("#pw1");
+	if((idbt&&pwbt) .prop("oninput")==true){
+		$(btnPurpleHandler);
+	}
+}
+function btnPurpleHandler(){
+	$("button.purple").css('background','#5055b1');
+} 
+
+</script> -->
+
+ <script>
+/* function myid(){
+    let value = document.getElementById('id1').value;
+    console.log(value);
+}
+
+function mypw(){
+    let value2 = document.getElementById('pw1').value;
+    console.log(value2);
+    console.log(value2.length);
+} */
+
+/*  function loginBtnHandler(){
+	let myid = document.getElementById('id1').value;
+	let mypw = document.getElementById('pw1').value;
+	
+	if(myid !=""&& mypw!=""){
+		btnPurpleHandler();
+		
+	}console.log(myid);
+	console.log(mypw);
+}
+function btnPurpleHandler(){
+	document.getElementsByClassName('purple').style.backgroundColor('5055b1'); */
+	//$("button.purple").css('background','#5055b1');
+	//console.log(loginBtnHandler());
+//} 
+
+</script>
+
+ 
+ <script>
+
+ /* 
+ function loginBtnHandler(){
+	 $("button.purple").hide()
+	 var idbt=$("#id1");
+	 var pwbt=$("#pw1");
+		if( idbt!="" && pwbt!=""){
+			$("button.purple").show();
+		}
+	} */
+/*  function btnPurpleHandler(){
+		$("button.purple").css('background','#5055b1');
+	} 
+	*/ 
+	
+	/* let loginBox = document.querySelector('#id1');
+	inputBox.addEventListener('keydown', function(){
+	  console.log('안녕') // console에 안녕 출력된다
+	}); */
+	
+/* function checkinputs(){
+		const username=document.getElementById('id1').value.tirm();
+		const password=document.getElementById('pw1').value.tirm();
+		loginButton=document.getElementById('loginBtn');
+		console.log(username);
+		if(username!=""&& password!=""){
+			loginButton.style.backgroundColor='purple';
+		}else{
+			loginButton.style.backgroundColor='gray';
+		}
+	} */
+	
+	const button = document.getElementsByClassName(".btn_lg")[0];
+	const inputid = document.getElementById('id1');
+	const inputpw = document.getElementById('pw1');
+	
+	function onInput() {
+	    const id = inputid.value;
+	    const pw = inputpw.value;
+	
+	if (id.length > 1 && pw.length > 1) {
+        // 버튼을 활성화 하는 로식
+        //* console.log("버튼 활성화");
+		
+		$(btnPurpleHandler);
+    } else {
+        // 버튼을 비활성화 하는 로직
+        //* console.log("버튼 비활성화");
+    	$(button);
+    	}
+	}
+	function btnPurpleHandler(){
+		$("button.purple").css('background','#5055b1');
+	} 
+
+loginBtn.addEventListener('input', () => {
+	 
+})
+ 
+ 
+// ID Event
+inputid.addEventListener('input', onInput);
+ 
+// PW Event
+inputpw.addEventListener('input', onInput);
+ </script>
+ 
+ 

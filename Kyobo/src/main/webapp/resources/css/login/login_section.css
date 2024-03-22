@@ -26,38 +26,31 @@ min-height: calc(100vh - 54px - 68px - 250px);
 	min-width: auto;
 	margin-top: 20px;
 }
-#loginBtn {
-	color: #fff;
-	border: 1px solid #767676;
-	background: #bebebe;
-   border-color: #bebebe;
-}
 
-button.btn_lg {
+ button.btn_lg {
 	height: 50px;
    padding: 0 23px 1px;
    border-radius: 6px;
-   
-   border:1px solid #5055b1;
-	color: #474c98;
-	background: #fff;
+   border:1px solid #bebebe;
+	color: #fff;
+	background: #bebebe;
 	min-width: auto;
 	
 }
 
-.btn_lg{
+ a.btn_lg{
 	height: 50px;
    padding: 0 23px 1px;
    border-radius: 6px;
-   
    border:1px solid #c0c0c0;
 	color: #000000;
 	background:#ffffff;
 	min-width: auto;
-}
+}  
 
-.btn_lg:hover{
+a.btn_lg:hover{
 	background-color:rgb(216, 213, 213);
+
 }
 
 .text {
@@ -81,10 +74,18 @@ button.btn_lg {
    overflow: hidden;
    border: 0;
    border-radius: 0;
-   background: none;
+    background: none;
 }
-input[type="checkbox"]{
-	box-sizing: border-box;
+ input[type="checkbox"]{
+	display:nond;
+	
+}
+input[type="checkbox"]:checked + label::before{
+	background-color: #5055b1;
+    border-color: #5055b1;
+}
+input[type="checkbox"]:checked + label::after{
+	 background-image: url("./resources/images/check.png");
 }
 .form_chk input + label {
    display: inline-block;
@@ -112,9 +113,13 @@ a.btn_text_link{
 .valid_desc-pw{
 	color:red;
 } 
-.purple{
-	color: #fff;
+
+
+/*  button.purple{
+	color: #fff;  
+	border: 1px solid #5055b1;
     background: #5055b1;
-    border: 1px solid #5055b1;
-}
+    
+}  
+ */
 
