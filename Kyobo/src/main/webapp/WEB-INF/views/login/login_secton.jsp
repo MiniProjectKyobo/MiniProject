@@ -204,29 +204,34 @@ function btnPurpleHandler(){
 		}
 	} */
 	
-	const button = document.getElementsByClassName(".btn_lg")[0];
+	//const button = document.getElementsByClassName(".btn_lg")[0];
 	const inputid = document.getElementById('id1');
 	const inputpw = document.getElementById('pw1');
+	
+	function btnPurpleHandler(){
+		$("button.purple").css('background','#5055b1');
+	} 
+
+	function btnGreyHandler(){
+		$("#loginBtn").css('background',' #bebebe');
+	}
 	
 	function onInput() {
 	    const id = inputid.value;
 	    const pw = inputpw.value;
 	
-	if (id.length > 1 && pw.length > 1) {
+	if ((id.length&& pw.length) > 0) {
         // 버튼을 활성화 하는 로식
-        //* console.log("버튼 활성화");
+        console.log(" 활성화");
 		
 		$(btnPurpleHandler);
     } else {
         // 버튼을 비활성화 하는 로직
-        //* console.log("버튼 비활성화");
-    	$(button);
+        console.log("비활성화");
+    	$(btnGreyHandler);
     	}
 	}
-	function btnPurpleHandler(){
-		$("button.purple").css('background','#5055b1');
-	} 
-
+	
 loginBtn.addEventListener('input', () => {
 	 
 })
