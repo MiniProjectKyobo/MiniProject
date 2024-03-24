@@ -2,6 +2,7 @@
 <link href="<%=request.getContextPath()%>/resources/css/cart/cart_section.css"  rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/cart/cart_header.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/cart/cart_footer.css" rel="stylesheet">
+
 <link href="<%=request.getContextPath()%>/resources/css/style.css" rel="stylesheet">
 <link href="<%=request.getContextPath()%>/resources/css/components.css"  rel="stylesheet">
 
@@ -12,21 +13,19 @@
 <head>
 <meta charset="UTF-8">
 <title>cart</title>
-<!-- jquery -->
-<!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet"> -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
 </head>
 <body>
 <div class="wrapper contents_cart">
 	<header class="header_wrapper">
-		<%@include file="/WEB-INF/views/cart/cart_header.jsp"%>
+		<%@include file="/WEB-INF/views/common/header.jsp"%>
 	</header>
 	<main class="container_wrapper" >
-		<%@include file="/WEB-INF/views/cart/cart_secton.jsp"%>
+		<%@include file="/WEB-INF/views/cart/cart_section.jsp"%>
 	</main>
 	<footer class="footer_wrapper">
-		<%@include file="/WEB-INF/views/cart/cart_footer.jsp"%>
+		<%@include file="/WEB-INF/views/common/footer.jsp"%>
 	</footer>
 </div>
 </body>

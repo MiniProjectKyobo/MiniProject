@@ -1,6 +1,7 @@
-/*  */
-.contents_inner .cart_body_inner {
+.cart_body_inner {
 	width: 890px;
+    border-top: 1px solid gray;
+    
 }
 
 .contents_inner .cart_body {
@@ -22,7 +23,6 @@
 .contents_inner .cart_top_wrap .cart_title_box ol{
 	display: flex;
 }
-/* 전체, 하트, 삭제 부분  */
 
 .contents_inner .cart_top_wrap .util_btn_box{
 	display: flex;
@@ -32,7 +32,6 @@
 
 }
 .contents_inner .btn_wish size_xs .ico_wish{
-/* 	float: right; */
 	width: 14px;
 	height: 14px;
 	margin-top: 7px;
@@ -40,11 +39,10 @@
 	
 }
 
-/* 유의사항  */
 .contents_inner .cart_body_wrap{
 	background: #f7f7f7;
+	display: flex;
 }
-/* 결제창 */
 .contents_inner .payments_info_area{
 	margin-bottom: 14px;
 	padding: 24px;
@@ -56,10 +54,15 @@
 
 .contents_inner .btn_wrap{
 	color: #fff;
-	background: #5055b1;
 	border: 1px solid #5055b1;
 	
 }
+
+.login_button_wrap {
+	padding-top: 30px;
+	color: #fff;
+}
+
 .contents_inner .payments_info_area .payments_info_box .payments_info_list .payments_info_item .right_box  {
 	margin-top: 12px;
 	margin-left: auto;
@@ -70,3 +73,179 @@
 	padding-top: 20px;
 	
 }
+
+
+
+
+.purchase_button {
+	margin-top: 10px;
+    background-color: #5055b1;
+    color: white; 
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.purchase_button:hover {
+	margin-top: 10px;
+    background-color: #434899;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.aside_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+	right: 10px;
+	top: 10px;
+    width: 275px;
+    padding: 15px;
+    padding-top: 15px;
+    
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background: #fff; 
+
+}
+
+
+.aside_line {
+  display: inline-block;
+  width: 100%;
+  height: 15px;
+  border-top: 1px solid lightgray;
+
+}
+
+.payments_info_box {
+	margin-bottom: 10px;
+}
+
+.payments_info_box > li {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10;
+}
+
+.cart_top {
+	display: flex;
+	justify-content: space-between;
+	height: 66px;
+	padding-left: 25px;
+	padding-right: 25px;
+	align-items: center;
+	
+}
+
+
+
+
+.cart_notes {
+	color: #595959;
+    font-size: 13px;
+    line-height: 19px;
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 12px;
+    padding-top: 15px;
+	
+}
+
+.circle_text {
+	display: inline-block;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    background: #d5d5d5;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 1px;
+    
+}
+
+.cart_stage {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart_menu {
+        position: relative;
+        width: 180px; 
+        height: 44px;
+}
+
+.cart_menu > :first-child {
+	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 110px; 
+    height: 44px;
+    background-color: #595959; 
+    border-radius: 44px;
+        
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+	
+}
+
+.cart_menu > :last-child {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px; 
+    height: 44px;
+    border-radius: 44px; 
+    border: 1px solid gray; 
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #595959;
+    font-weight: 400;
+    padding: 20px;
+}
+
+
+.cart_stage > li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+#total_price {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#cart_title {
+	font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+}
+
+
+
+

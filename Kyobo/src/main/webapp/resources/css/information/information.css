@@ -144,6 +144,7 @@ body{
     width: 100%;
     background-color: whitesmoke;
     border-top: 1px solid lightgray;
+    z-index: 100;
 }
 
 .product_details {
@@ -424,3 +425,4 @@ border-radius: 20px;
     filter: invert(60%);
 	
 }
+
