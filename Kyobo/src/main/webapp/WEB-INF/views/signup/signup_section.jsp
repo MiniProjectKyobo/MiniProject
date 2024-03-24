@@ -228,7 +228,7 @@ $("#formJoin07").on("keyup", function(){
 		              			<div class="valid_check">
 		                  			<div class="input_btn_box">
 		                      			<div class="awesomplete">
-		                      				<input type="email" id="formJoin08" class="form_ip" placeholder="이메일을 입력해 주세요." data-autocomplete="85" autocomplete="off">
+		                      				<input type="email" id="formJoin08" class="form_ip" placeholder="이메일을 입력해 주세요." autocomplete="off">
 		                      			</div>	
 		                      			<button type="button" data-email="formJoin08" class="btn_gray_e">
 		                      				<span class="text">인증번호 발송</span>
@@ -262,6 +262,7 @@ $("#formJoin08").on("keyup", function(){
 		              		생년월일/성별
 		              		<img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
 		          		</label>
+		  
 		        	</div>
 		
 		      		<div class="form_cont">
@@ -283,6 +284,7 @@ $("#formJoin08").on("keyup", function(){
 		                        		</label>
 		                    		</span>
 		                		</div>
+		                		<span class="valid_desc fir"></span>
 		            		</div>
 		      			</div>
 		    		</div>
@@ -290,6 +292,26 @@ $("#formJoin08").on("keyup", function(){
 		    </div>
 		</form>
 	 </div>
+	 
+<script>
+$("formJoin06").on("blur", function(){
+	var bLength = $(this).val().trim().length;
+	var b = $(this).val().trim();
+	msg='';
+	var b_regex = /^([0-9]{2}(0[0-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])$/;
+	if(b_regex.test(b) == false) {
+		msg = '생년월일 8자리를 입력해주세요.'
+	}
+	
+	$(".valid_desc fir").html(msg);
+});
+
+
+
+</script>
+	 
+	 
+	 
 
   	 <div class="title_wrap title_size_def">
     	<p class="title_heading">서비스 이용약관 동의</p>
