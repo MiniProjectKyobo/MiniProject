@@ -19,6 +19,7 @@
         	<h2 class="title_heading">회원정보 입력</h2><!-- 수정 220509 SEO H태그 적용 -->
             <div class="right_area"> <!-- 수정 220405 right_area 추가 -->
                 <span class="required">
+                <img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
                 	<span class="text">필수 입력</span>
                 </span>
             </div>
@@ -31,6 +32,7 @@
         			<div class="form_title">
           				<label for="formJoin01" class="form_label">
               					아이디
+              					<img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
           				</label>
         			</div>
 
@@ -66,6 +68,7 @@ $("#formJoin01").on("blur", function(){
         			<div class="form_title">
           				<label for="formJoin02" class="form_label">
               						비밀번호
+              				<img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
           				</label>
        				 </div>
 
@@ -109,6 +112,7 @@ $("#formJoin01").on("blur", function(){
         			<div class="form_title">
           				<label for="formJoin03" class="form_label">
               				비밀번호 확인
+              					<img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
           				</label>
        				</div>
 
@@ -159,9 +163,7 @@ $(function(){
 					<div class="form_title">
           				<label for="formJoin04" class="form_label">
               				이름
-              			<span class="required">
-                  			<span class="hidden">필수입력</span>
-              			</span>
+							<img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
           				</label>
         			</div>
 
@@ -177,9 +179,7 @@ $(function(){
 		        	<div class="form_title">
 		          		<label for="formJoin07" class="form_label">
 		              		휴대폰번호
-		             		<span class="required">
-		                  		<span class="hidden">필수입력</span>
-		              		</span>
+							<img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
 		          		</label>
 		        	</div>
 		
@@ -205,6 +205,7 @@ $(function(){
 		       		<div class="form_title">
 		          		<label for="formJoin08" class="form_label">
 		             		 이메일
+		             		 <img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
 		          		</label>
 		        	</div>
 		
@@ -230,6 +231,7 @@ $(function(){
 		        	<div class="form_title">
 		          		<label for="formJoin06" class="form_label">
 		              		생년월일/성별
+		              		<img src="<%=request.getContextPath()%>/resources/images/ico_required@2x.png" class="required_img">
 		          		</label>
 		        	</div>
 		
