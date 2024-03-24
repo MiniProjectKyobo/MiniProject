@@ -201,51 +201,15 @@ $(function(){
 	      		
 <script>
 
-/*  $("#formJoin07").on("keyup", function(){
-	var num = $("#formJoin07").val().trim();
-
-	num
-	
-	if(num.Length == 11) {
-		$("button").css("background-color",'#5055b1');
-		
-	} else {
-		
-	}
-	
-});   */
-
-
-	
- 
-/* 
-$(document).ready(function(){
-	
-	$("#formJoin07").keyup(function(){
-		var num = $("#formJoin07").val().trim();
-		if(num.Length == 11) {
-			$("button").hide();
-		}else {
-			
+$("#formJoin07").on("keyup", function(){
+	var nLength = $(this).val().trim().length;
+	var n = $(this).val().trim();
+	var num_regex = /^(01[0-9]{1}-?[0-9]{4}-?[0-9]{4}|01[0-9]{8})$/;
+		if(num_regex.test(n) == true){
+			$(".btn_gray_n").css("background", "#5055b1");
 		}
-	});
-});  */
 
-/* $('#formJoin07').on('keypress', checkNumHandler);
-
-// input 입력 시에 checkInput 함수실행
-function checkNumHandler() {
-  var numCheck = $('#formJoin07').val().trim;
-  var btn = $('.btn_gray');
-
-  if (numCheck == 11) {
-    
-    btn.hide('on');
-  } else {
-    btn;
-  }
-} */
-
+});
 
  
 </script>		
