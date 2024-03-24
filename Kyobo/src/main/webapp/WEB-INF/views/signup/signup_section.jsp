@@ -60,7 +60,6 @@ $("#formJoin01").on("blur", function(){
 	$(".valid_desc").html(msg);
 });
 
-
 </script>
 
    				<div class="form_box">
@@ -168,7 +167,7 @@ $(function(){
 
       				<div class="form_cont">
           				<div class="valid_check">
-           					<input type="text" class="form_ip" id="formJoin04" placeholder="이름을 입력해 주세요." disabled="">
+           					<input type="text" class="form_ip" id="formJoin04" placeholder="이름을 입력해 주세요." disabled="disabled">
             				<span class="valid_desc"></span>
         				</div>
       				</div>
@@ -189,7 +188,7 @@ $(function(){
 		              		<div class="col_box">
 		                  		<div class="valid_check">
 		                      		<div class="input_btn_box">
-		                          		<input type="text" maxlength="13" id="formJoin07" class="form_ip" placeholder="숫자만 입력해 주세요." disabled="">
+		                          		<input type="text" maxlength="13" id="formJoin07" class="form_ip" placeholder="숫자만 입력해 주세요." disabled="disabled">
 		                          		<button type="button" class="btn_ip btn_light_gray">
 		                          			<span class="text">인증번호 발송</span>
 		                          		</button>
@@ -237,7 +236,7 @@ $(function(){
 		      		<div class="form_cont">
 		          		<div class="valid_check">
 		            		<div class="input_btn_box">
-		                		<input type="text" maxlength="8" id="formJoin06" class="form_ip" placeholder="생년월일 8자리를 입력해 주세요." disabled="">
+		                		<input type="text" maxlength="8" id="formJoin06" class="form_ip" placeholder="생년월일 8자리를 입력해 주세요." disabled="disabled">
 		                	
 		                		<div class="form_filter_box">
 		                   			<span class="form_filter">
@@ -264,7 +263,6 @@ $(function(){
   	 <div class="title_wrap title_size_def">
     	<p class="title_heading">서비스 이용약관 동의</p>
 	 </div>
-
 
 <script>
 
@@ -302,10 +300,9 @@ $(document).ready(function(){
     				<span class="form_chk">
        					<input type="checkbox" id="kyoboBook"name="check1">
         				<label for="kyoboBook">
-       					 	<span class="text">교보문고 이용약관</span>
-            			</label>
+       					 	교보문고 이용약관
             				<span class="fc_green">(필수)</span>
-        				</form>
+            			</label>
    					 </span>
     				
     				 <div class="right_box">
@@ -374,21 +371,33 @@ $(document).ready(function(){
  
  <script>
  $(document).ready(function(){
-	
-	 
+ 
 	 var mHandler = $("#kyoboLifePlanet").click(function(){
 		
 		if($("#kyoboLifePlanet").prop("checked")){
 			$("input[name='check3']").removeAttr("readonly");
 		}  else {
 			$("input[name='check3']").prop("readonly", true); 
-		}
+			
+/* 		 $(".checkedItems").children().each(function(index, element){
+			
 
+					if($(this).data("itemcode") == $checkedElement.data("itemcode")) {
+						$(this).remove();
+						return;
+					
+					}
+					  
+					
+				 }); */
+
+		}
+	
 	});	
 
 	
  });
-	
+ 
  
 /*   $(document).ready(function(){
 		$("#kyoboLifePlanet").on("click", function(){
@@ -430,7 +439,7 @@ $(document).ready(function(){
                             	<li class="chk_row_item type_all">
                                 	<span class="form_chk">
 	                                    <input  type="checkbox" id="termsMarketingChk2" name="check3" readonly="readonly">
-                                    	<label for="termsMarketingChk2" class="fc_gray">
+                                    	<label for="termsMarketingChk2" class="desc_gray">
                                     		마케팅 수신 동의 
                                     		<span class="desc_gray">(선택)</span>
                                     	</label>
@@ -453,8 +462,8 @@ $(document).ready(function(){
                     	 </div>
                 	 </div>
            	      </li>
-            
-            <li class="chk_col_item">
+ 	      
+            	<li class="chk_col_item">
                 <div class="marketing_agree_area">
                     <span class="form_chk">
 	                        <input type="checkbox" id="termsMarketingChk" name="check2">
@@ -463,7 +472,7 @@ $(document).ready(function(){
                         	<span class="desc_gray">(선택)</span>
                         </label>
                     </span>
-                    
+ 
                     <div class="marketing_agree_inner">
                         <!-- chk_row_list -->
                         <ul class="chk_row_list">
@@ -490,7 +499,7 @@ $(document).ready(function(){
      </div>
      
      <div class="btn_wrap justify page_bottom" id="joinComplete">
-     	<button class="btn_lg btn_primary" disabled="">
+     	<button class="btn_lg btn_primary" disabled="disabled">
      		<span class="text">회원가입</span>
      	</button>
      </div>
