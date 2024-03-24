@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+body > div {
+	padding-top: 100px;	
+}
+
+
+body > div > header {
+	border-bottom: none;
+}
+
+div > header > div > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+img {
+    width: 171px;
+    height: 90px;
+}

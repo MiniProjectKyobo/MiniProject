@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
+div > main > section {
+	padding: 20px 0 100px;
+}
 
-
-
-.wrapper .container_wrapper {
-    display: flex;
-
+.container_wrapper {
+	padding: 0 100px;
+	display: flex;
 }
 
 .contents_wrap {
@@ -15,6 +16,11 @@
 
 }
 
+.required_img {
+	width: 6px;
+	height: 6px;
+	background: url("./resources/images/ico_required@2x.png");
+}
 
 
 
