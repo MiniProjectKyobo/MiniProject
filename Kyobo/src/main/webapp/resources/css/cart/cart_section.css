@@ -51,11 +51,22 @@
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	background: #fff; 
+
 }
 
 .contents_inner .btn_wrap{
 	color: #fff;
 	background: #5055b1;
 	border: 1px solid #5055b1;
+	
+}
+.contents_inner .payments_info_area .payments_info_box .payments_info_list .payments_info_item .right_box  {
+	margin-top: 12px;
+	margin-left: auto;
+	padding-left: 10px;
+}
+.contents_inner .price{
+	padding-left: 150px;
+	padding-top: 20px;
 	
 }

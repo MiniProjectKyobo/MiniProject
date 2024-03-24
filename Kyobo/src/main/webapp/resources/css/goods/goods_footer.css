@@ -1,44 +1,46 @@
 @charset "UTF-8";
 
-.footer_body{
+.footer_body {
 	padding: 40px 0 50px;
 	flex-direction: row;
 }
-.footer_inner{
-	display:flex;
-	margin:0 auto;
-	width:1200px;
+
+.footer_inner {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 1200px;
 }
-.notice_wrap winner{
-	display:flex;
+
+.footer_info_box{
+     margin-left: 2rem;
+	
 }
-.logo_box{
-	display:flex;
+ 
+.logo_box {
+	display: flex;
 	align-items: flex-end;
 }
 
-.footer_contents_wrap{
-	display:flex;
+.footer_contents_wrap {
+	display: flex;
 	margin-top: 28px;
-
 }
 
-.logo_box{
+.logo_box {
 	display: block;
 	width: 1200px;
-    height: 48px;
+	height: 48px;
 }
 
-img{
+img {
 	width: 168px;
 	height: 48px;
 }
 
-.copyright{
+.copyright {
 	margin-top: 23px;
 	line-height: 18px;
 	color: #767676;
 	font-size: 12px;
 }
-
-
