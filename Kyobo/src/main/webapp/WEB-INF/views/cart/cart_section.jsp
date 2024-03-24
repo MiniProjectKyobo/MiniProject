@@ -34,32 +34,62 @@
 	
 		<div class="cart_body">
 			<div class="cart_body_inner" id="cart_toggle">
-				<div class="no_data size_sm">
-					
-					<div class="cartmain">
-						<div class="no_data_desc">
-							<img
-								src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_nodata@2x.png"
-								class="ico_nodata" width="36px" height="36px">
+			<div class="cart_book_list">
 
-							<div class="text">장바구니에 담긴 상품이 없어요</div>
-						</div>
-
-
-						<div class="login_button_wrap" style data-no-data>
-							<a class="btn_lg btn_primary "
-								href="http://127.0.0.1:8080/kyobo/login"> <span class="text">로그인
-							</span>
-							</a>
-						</div>
-					</div>
-				</div>
+    <div class="cart_book_box">
+        <img src="<%=request.getContextPath()%>/resources/images/bestseller_1.jpg" class="book_image">
+        
+        <div class="cart_book_textbox">
+            <span class="book_title_text"> 고층 입원실의 갱스터 할머니 </span> 
+            <span class="cart_name_text"> 양유진 </span>
+            <span class="cart_cost_text"><span style="color:#4dac27">10%</span> <b>16,920</b> 원 </span>
+            <s><span style="font-size: smaller;"> 18,800원</span></s>
+            <span class="cart_name_text">(940P)</span>
+        </div>
+        <div class="cart_book_counter_wrap"> 
+        	<div>
+        		<span><b class="total_price">16,920</b>원</span>
+        	
+        	</div>
+	        <div class="cart_book_counter">
+	         		<div class="inc_down" id="down_pressed">
+	         			<img src="<%=request.getContextPath()%>/resources/images/minus.png" class="inc_icon">
+	         		
+	         		</div>
+	         		<div class="book_counter book_count">
+	         			1
+	         		</div>
+	         		
+	         		<div class="inc_up" id="up_pressed">
+	         			<img src="<%=request.getContextPath()%>/resources/images/plus.png" class="inc_icon" >
+	         		</div>
+	          
+	    	</div>
+	    	</div>
+	    	<div class="cart_info">
+	    		<div class="text_center">
+	    			<span class="circular_outline_1">당일배송</span>
+	    			오늘(3/25월) 도착
+	    		</div>
+	    		<div class="text_center">
+	    			<span class="circular_outline_2">바로드림</span>
+	    			
+	    			2024.03.25 이후 수령가능 , 광화문점
+	    		</div>
+	    	
+	    	</div>
+	    	
+	    	
+	    
+			</div>
+			</div>
+				
 				
 				<aside class="aside_wrapper">
 			    	<ul class="payments_info_box">
 			         	<li>
 			         		<span> 상품 금액</span>
-			         		<span><b id="total_price_original">0</b>원</span>
+			         		<span><b class="total_price_original">18,800</b>원</span>
 			         	</li>
 			         	<li>
 			         		<span> 배송비</span>
@@ -68,7 +98,7 @@
 			         	
 			         	<li>
 			         		<span> 상품 할인</span>
-			         		<span style="color: #5055b1;"> - <b id="total_discount">0</b>원</span>
+			         		<span style="color: #5055b1;"> - <b class="total_discount">1880</b>원</span>
 			         	</li>
 			         	
 			      
@@ -79,12 +109,12 @@
 			    	<ul class="payments_info_box">
 			         	<li>
 			         		<span> 결제 예정 금액 </span>
-			         		<span><b id="total_price">0</b>원</span>
+			         		<span><b class="total_price">16,920</b>원</span>
 			         	</li>
 			         	
 			         	<li>
 			         		<span> 적립 예정 포인트 </span>
-			         		<span id="total_points">0 P</span>
+			         		<span class="total_points">960 P</span>
 			         	</li>
 			         	
 			      
@@ -92,7 +122,7 @@
 
 			     	
 			     	<button class="purchase_button">
-						주문하기 (<span class="book_count">0</span>)
+						주문하기 (<span class="book_count">1</span>)
 			     	</button>
 			     
 			     	
@@ -120,32 +150,92 @@
 			</div>
 			</div>
 			</div>
+			
+<script>
+var num = 1;
+var total_price = 16920;
+var total_discount = 1880;
+var total_points = 940;
+var total_price_original = 18800;
 
+var price = 16920;
+var discount = 1880;
+var points = 940;
+var price_original = 18800;
 
-
-	<script>
-    $(document).ready(function() {
-        let price = sessionStorage.getItem('price');
-        let discount = sessionStorage.getItem('discount');
-        let points = sessionStorage.getItem('points');
-        let book_count = sessionStorage.getItem('num');
+$(document).ready(function() {
+    if (sessionStorage.getItem('price') !== null && sessionStorage.getItem('price') !== undefined) {
+    	total_price = parseFloat(sessionStorage.getItem('price'));
+        total_discount = parseFloat(sessionStorage.getItem('discount'));
+        total_points = parseFloat(sessionStorage.getItem('points'));
+        total_price_original = parseFloat(sessionStorage.getItem('original'));
+        num = parseFloat(sessionStorage.getItem('num'));
+    	
+    	
+        $(".total_price_original").text(total_price_original.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        $(".total_discount").text(total_discount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        $(".total_price").text(total_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        $(".total_points").text(total_points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " P");
+        $(".book_count").text(num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
         
-    	let total_price_original = parseFloat(price) + parseFloat(discount);
+    } 
 
-        
-        if (price !== null && price !== undefined) {
-            $("#total_price_original").text(total_price_original.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-            $("#total_discount").text(discount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-            $("#total_price").text(price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-            $("#total_points").text(points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " P");
-            $(".book_count").text(book_count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    
+});
 
 
-        } else {
-            console.log("Price not found in sessionStorage.");
+
+$(document).ready(function() {
+
+
+
+    $("#down_pressed").click(function () {
+        if (num > 1) {
+            num--;
+            total_price -= price;
+            total_discount -= discount;
+            total_points -= points;
+            total_price_original -= price_original;
+
+            sessionStorage.setItem('discount', total_discount);
+            sessionStorage.setItem('price', total_price);
+            sessionStorage.setItem('num', num);
+            sessionStorage.setItem('points', total_points);
+            sessionStorage.setItem('original', total_price_original);
+
+
+            $(".total_price_original").text(total_price_original.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+            $(".total_discount").text(total_discount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+            $(".total_price").text(total_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+            $(".total_points").text(total_points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " P");
+            $(".book_count").text(num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
         }
-        
-        
     });
+
+    $("#up_pressed").click(function () {
+        num++;
+        total_price += price;
+        total_discount += discount;
+        total_points += points;
+        total_price_original += price_original;
+
+
+        sessionStorage.setItem('discount', total_discount);
+        sessionStorage.setItem('price', total_price);
+        sessionStorage.setItem('num', num);
+        sessionStorage.setItem('points', total_points);
+        sessionStorage.setItem('original', total_price_original);
+
+
+        $(".total_price_original").text(total_price_original.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        $(".total_discount").text(total_discount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        $(".total_price").text(total_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        $(".total_points").text(total_points.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " P");
+        $(".book_count").text(num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    });
+});
+
+		
+    
 </script>
 </section>

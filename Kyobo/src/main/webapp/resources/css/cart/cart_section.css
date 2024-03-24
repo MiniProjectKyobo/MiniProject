@@ -246,6 +246,167 @@
     letter-spacing: -0.01em;
 }
 
+.book_image {
+	display: block;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.cart_book_box {
+	display: flex;
+}
+
+.cart_book_textbox {
+	margin-left: 10px;
+	width: 400px;
+}
+
+.book_title_text {
+    color: black;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+
+    
+}
+
+.cart_name_text {
+    display: block;
+    color: #595959;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+ 
+.cart_cost_text {
+	font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+}
+
+.cart_box {
+	display: flex;
+}
+
+.cart_book_list {
+    margin: 15px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	
+}
 
 
+.cart_book_counter {
+	display: flex;
+	margin-left: 30px;
+	margin-top: 10px;
+	
+	width: 70px;
+	right: 50%;
+	
+}
 
+.cart_book_counter_wrap {
+	margin: auto;
+	width: 200px;
+	text-align: center;
+	
+}
+
+.inc_down {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 8px 0px 0px 8px;
+	border-top: solid lightgrey 1px;
+	border-bottom: solid lightgrey 1px;
+	border-left: solid lightgrey 1px;
+	padding-left: 10px;
+	height: 30px;
+}
+	
+.book_counter {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	width: 60px;
+	border-top: solid lightgrey 1px;
+	border-bottom: solid lightgrey 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	
+	
+}
+.inc_up {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 0px 8px 8px 0px;
+	border-top: solid lightgrey 1px;
+	border-bottom: solid lightgrey 1px;
+	border-right: solid lightgrey 1px;
+	padding-right: 10px;
+	height: 30px;
+	
+}
+
+.inc_icon {
+	width: 12px;
+}
+
+.circular_outline_1 {
+	display: inline-block;
+    color: #474c98;
+    margin-right: 6px;
+    background: #ededf7;    
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.circular_outline_2 {
+	display: inline-block;
+    color: #474c98;
+    margin-right: 6px;
+    background: white;    
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #474c98;
+    
+}
+
+.cart_info {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.cart_info > * {
+	flex: 1 1 0;
+	height: 0;
+}
+
+.text_center {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+  
+
+    
