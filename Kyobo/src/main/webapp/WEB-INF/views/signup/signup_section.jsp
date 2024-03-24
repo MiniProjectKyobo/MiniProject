@@ -132,26 +132,20 @@ $("#formJoin01").on("blur", function(){
 				  
 <script>
 
-$(function(){
-	$(".valid_check_success").hide();
-	$(".valid_check_fail").hide();
-	$("input").keyup(function(){
-		var pwd1=$("#formJoin02").val();
-		var pwd2=$("#formJoin03").val();
-		if(pwd1 != "" || pwd2 != ""){
+
+$("input").keyup(function(){
+	var pwd1=$("#formJoin02").val();
+	var pwd2=$("#formJoin03").val();
+	if(pwd1 != "" || pwd2 != ""){
 		if(pwd1 == pwd2) {
-			$(".valid_check_success").show();
-			$(".valid_check_fail").hide();
 			$("#valid_desc").html("일치").css('color', 'green');
 		} else {
-			$(".valid_check_success").hide();
-			$(".valid_check_fail").show();
 			$("#valid_desc").html("불일치").css('color', 'red');
 		}
 	}
-	});
-	
 });
+	
+
 
 
 </script>
@@ -307,18 +301,8 @@ $("formJoin06").on("blur", function(){
 });
 
 
-
-</script>
-	 
-	 
-	 
-
-  	 <div class="title_wrap title_size_def">
-    	<p class="title_heading">서비스 이용약관 동의</p>
-	 </div>
-
-<script>
-
+	
+	
 $(document).ready(function(){
 	$("#termsAllChk").click(function(){
 		if($("#termsAllChk").prop("checked")) {
@@ -332,9 +316,15 @@ $(document).ready(function(){
 });
 
 
-
-
 </script>
+	 
+	 
+	 
+
+
+  	 <div class="title_wrap title_size_def">
+    	<p class="title_heading">서비스 이용약관 동의</p>
+	 </div>
 
 	 <div class="terms_agree_chk_wrap">
     	<div class="terms_agree_row">
@@ -431,40 +421,6 @@ $(document).ready(function(){
 			$("input[name='check3']").removeAttr("readonly");
 		}  else {
 			$("input[name='check3']").prop("readonly", true); 
-			
-/* 		 $(".checkedItems").children().each(function(index, element){
-			
-
-					if($(this).data("itemcode") == $checkedElement.data("itemcode")) {
-						$(this).remove();
-						return;
-					
-					}
-					  
-					
-				 }); */
-
-		}
-	
-	});	
-
-	
- });
- 
- 
-/*   $(document).ready(function(){
-		$("#kyoboLifePlanet").on("click", function(){
-			if($("#kyoboLifePlanet").prop("checked")) {
-				$("input[name='check3']").removeAttr("readonly");
-			}else {
-				$("input[name='check3']").prop("readonly", true);
-			}
-		
-		});
-		});
-
- 
-  */
 
  
  </script>
