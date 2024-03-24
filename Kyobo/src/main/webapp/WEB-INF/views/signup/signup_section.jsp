@@ -169,7 +169,7 @@ $(function(){
 
       				<div class="form_cont">
           				<div class="valid_check">
-           					<input type="text" class="form_ip" id="formJoin04" placeholder="이름을 입력해 주세요." disabled="disabled">
+           					<input type="text" class="form_ip" id="formJoin04" placeholder="이름을 입력해 주세요.">
             				<span class="valid_desc"></span>
         				</div>
       				</div>
@@ -188,8 +188,8 @@ $(function(){
 		              		<div class="col_box">
 		                  		<div class="valid_check">
 		                      		<div class="input_btn_box">
-		                          		<input type="text" maxlength="13" id="formJoin07" class="form_ip" placeholder="숫자만 입력해 주세요." disabled="disabled">
-		                          		<button type="button" class="btn_ip btn_light_gray">
+		                          		<input type="text" maxlength="13" id="formJoin07" class="form_ip" placeholder="숫자만 입력해 주세요.">
+		                          		<button type="button" class="btn_gray_n">
 		                          			<span class="text">인증번호 발송</span>
 		                          		</button>
 		                  			</div>
@@ -198,8 +198,57 @@ $(function(){
 		              	</div>
 		              </div>
 		           </div>
-		              		
+	      		
+<script>
+
+/*  $("#formJoin07").on("keyup", function(){
+	var num = $("#formJoin07").val().trim();
+
+	num
+	
+	if(num.Length == 11) {
+		$("button").css("background-color",'#5055b1');
 		
+	} else {
+		
+	}
+	
+});   */
+
+
+	
+ 
+/* 
+$(document).ready(function(){
+	
+	$("#formJoin07").keyup(function(){
+		var num = $("#formJoin07").val().trim();
+		if(num.Length == 11) {
+			$("button").hide();
+		}else {
+			
+		}
+	});
+});  */
+
+/* $('#formJoin07').on('keypress', checkNumHandler);
+
+// input 입력 시에 checkInput 함수실행
+function checkNumHandler() {
+  var numCheck = $('#formJoin07').val().trim;
+  var btn = $('.btn_gray');
+
+  if (numCheck == 11) {
+    
+    btn.hide('on');
+  } else {
+    btn;
+  }
+} */
+
+
+ 
+</script>		
 		    
 		    	<div class="form_box">
 		       		<div class="form_title">
@@ -215,9 +264,9 @@ $(function(){
 		              			<div class="valid_check">
 		                  			<div class="input_btn_box">
 		                      			<div class="awesomplete">
-		                      				<input type="email" id="formJoin08" class="form_ip" placeholder="이메일을 입력해 주세요." data-autocomplete="85" autocomplete="off" aria-expanded="false" aria-owns="awesomplete_list_2" role="combobox">
+		                      				<input type="email" id="formJoin08" class="form_ip" placeholder="이메일을 입력해 주세요." data-autocomplete="85" autocomplete="off">
 		                      			</div>	
-		                      			<button type="button" data-email="formJoin08" class="btn_ip btn_light_gray">
+		                      			<button type="button" data-email="formJoin08" class="btn_gray_e">
 		                      				<span class="text">인증번호 발송</span>
 		                      			</button>
 		          					</div>
@@ -226,6 +275,22 @@ $(function(){
 						</div>
 					</div>
 				</div>	
+	
+<script>	
+
+$("#formJoin08").on("keyup", function(){
+	var eLength = $(this).val().trim().length;
+	var e = $(this).val().trim();
+	var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+		if(email_regex.test(e) == true){
+			$(".btn_gray_e").css("background", "#5055b1");
+		}
+
+});
+	
+</script>
+	
+	
 		    
 		    	<div class="form_box">
 		        	<div class="form_title">
@@ -238,17 +303,17 @@ $(function(){
 		      		<div class="form_cont">
 		          		<div class="valid_check">
 		            		<div class="input_btn_box">
-		                		<input type="text" maxlength="8" id="formJoin06" class="form_ip" placeholder="생년월일 8자리를 입력해 주세요." disabled="disabled">
+		                		<input type="text" maxlength="8" id="formJoin06" class="form_ip" placeholder="생년월일 8자리를 입력해 주세요.">
 		                	
 		                		<div class="form_filter_box">
 		                   			<span class="form_filter">
-			                        	<input  type="radio" id="rdoFilter02" name="rdoFilter" disabled="disabled">
+			                        	<input  type="radio" id="rdoFilter02" name="rdoFilter">
 		                        		<label for="rdoFilter02">
 		                        			<span class="text">남</span>
 		                        		</label>
 		                    		</span>
 		                    		<span class="form_filter">
-			                        	<input  type="radio" id="rdoFilter01" name="rdoFilter" disabled="disabled">
+			                        	<input  type="radio" id="rdoFilter01" name="rdoFilter">
 		                        		<label for="rdoFilter01">
 		                        			<span class="text">여</span>
 		                        		</label>
