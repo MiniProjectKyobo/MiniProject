@@ -45,24 +45,61 @@
 
 <script>
     var num = 1;
-    var price = 16920;
+    var total_price = 16920;
+    var total_discount = 1880;
+    var total_points = 940;
+	var price = 16920;
+	var discount = 1880;
+	var points = 940;
+	
+	
     
-    var original_price = 16920;
+    sessionStorage.setItem('price', price);
+    sessionStorage.setItem('num', num);
+    sessionStorage.setItem('discount', discount);
+    sessionStorage.setItem('points', points);
+
+
+
+    
   
   $("#down_pressed").click(function () {
     if (num > 0) {
         $("#counter").html(--num);
-        price = price - original_price;
-        $("#price_counter").html(price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+        total_price = total_price - price;
+        total_discount = total_discount - discount;
+        total_points = total_points - points;
+
+        sessionStorage.setItem('discount', total_discount);
+        sessionStorage.setItem('price', total_price);
+        sessionStorage.setItem('num', num);
+        sessionStorage.setItem('points', total_points);
+
+
+        $("#price_counter").html(total_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
 
     }
   })
   
   $("#up_pressed").click(function () {
       $("#counter").html(++num);
-      price = price + original_price;
-      $("#price_counter").html(price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+      total_price = total_price + price;
+      total_discount = total_discount + discount;
+      total_points = total_points + points;
+
+
+      sessionStorage.setItem('discount', total_discount);
+      sessionStorage.setItem('price', total_price);
+      sessionStorage.setItem('num', num);
+      sessionStorage.setItem('points', total_points);
+
+
+      $("#price_counter").html(total_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
   })
+    
+
+  
+  
 </script>
 
 </html>

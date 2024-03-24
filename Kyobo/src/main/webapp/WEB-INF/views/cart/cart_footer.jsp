@@ -16,12 +16,12 @@
 		<div class="footer_contents_left">
 			<div class="footer_menu_box">
 				<div class="footer_menu_list">
-					<div>회사소개</div>
-					<div>이용약관</div>
-					<div>개인정보 처리방침</div>
-					<div>청소년 보호정책</div>
-					<div>대량주문 안내</div>
-					<div>협력사여러분</div>
+					<span>회사소개</span>
+					<span>이용약관</span>
+					<span>개인정보 처리방침 </span>
+					<span>청소년 보호정책</span>
+					<span>대량주문 안내</span>
+					<span>협력사여러분</span>
 				</div>
 			</div>
 			<address class="footer_info_box">
