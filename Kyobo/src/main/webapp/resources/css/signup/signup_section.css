@@ -22,6 +22,18 @@ div > main > section {
 	background: url("./resources/images/ico_required@2x.png");
 }
 
+.btn_gray_n, .btn_gray_e {
+	color: #fff;
+    background: #767676;
+    border: 1px solid #767676;
+    transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+    height: 44px;
+    padding: 0 19px 1px;
+    border-radius: 6px;
+    margin-left: 6px;
+}
 
+.btn_gray:hover{
+	background-color:rgb(89, 89, 89);
 
-
+}
