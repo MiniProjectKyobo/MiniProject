@@ -242,7 +242,7 @@ $("#formJoin08").on("keyup", function(){
 	var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
 		if(email_regex.test(e) == true){
 			$(".btn_gray_e").css("background", "#5055b1");
-		}
+		} 
 
 });
 	
@@ -292,7 +292,7 @@ $("formJoin06").on("blur", function(){
 	var bLength = $(this).val().trim().length;
 	var b = $(this).val().trim();
 	msg='';
-	var b_regex = /^([0-9]{2}(0[0-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])$/;
+	var b_regex = /^(19[0-9][0-9]|20\d{2})(0[0-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])$/;
 	if(b_regex.test(b) == false) {
 		msg = '생년월일 8자리를 입력해주세요.'
 	}
@@ -411,19 +411,6 @@ $(document).ready(function(){
         				</button>
     				</div>
 				 </li>
- 
- <script>
- $(document).ready(function(){
- 
-	 var mHandler = $("#kyoboLifePlanet").click(function(){
-		
-		if($("#kyoboLifePlanet").prop("checked")){
-			$("input[name='check3']").removeAttr("readonly");
-		}  else {
-			$("input[name='check3']").prop("readonly", true); 
-
- 
- </script>
             
             	 <li class="chk_col_item">
                 	<div class="marketing_agree_area">
@@ -471,7 +458,7 @@ $(document).ready(function(){
                     	 </div>
                 	 </div>
            	      </li>
- 	      
+
             	<li class="chk_col_item">
                 <div class="marketing_agree_area">
                     <span class="form_chk">
@@ -519,3 +506,20 @@ $(document).ready(function(){
 
 <!-- //이용약관 팝업 -->
 </section>
+
+<script>
+
+ $(document).ready(function(){
+ 
+	 var mHandler = $("#kyoboLifePlanet").click(function(){
+		
+		if($("#kyoboLifePlanet").prop("checked")){
+			$("input[name='check3']").removeAttr("readonly");
+		}  else {
+			$("input[name='check3']").prop("readonly", true); 
+		}
+
+		});
+	});
+
+</script>
